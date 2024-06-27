@@ -52,24 +52,24 @@ interests:
 education:
   - area: PhD Astrophysics and Machine Learning
     institution: Princeton University
-    date_start: 2022
-    date_end: 2026
+    date_start: 2022-08-15
+    date_end: 2027-06-10
   - area: MA Astrophysics and Machine Learning
     institution: Princeton University
-    date_start: 2022
-    date_end: 2023
+    date_start: 2022-08-15
+    date_end: 2023-09-5
   - area: BHons Computational Astrohysics
     institution: Australian National University
-    date_start: 2021
-    date_end: 2021
+    date_start: 2021-02-3
+    date_end: 2021-12-10
   - area: BSc Computational Mathematics
     institution: Queensland University of Technology
-    date_start: 2017
-    date_end: 2021
+    date_start: 2017-02-02
+    date_end: 2020-11-15
   - area: BSc Physics
     institution: Queensland University of Technology
-    date_start: 2017
-    date_end: 2021
+    date_start: 2017-02-02
+    date_end: 2020-11-15
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
