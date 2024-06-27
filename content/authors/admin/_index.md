@@ -56,8 +56,8 @@ education:
     date_end: 2027
   - area: MA Astrophysics and Machine Learning
     institution: Princeton University
-    date_start: 2022
-    date_end: 2023
+    date_start: 2022-02-01
+    date_end: 2023-05-01
   - area: BHons Computational Astrohysics
     institution: Australian National University
     date_start: 2021
