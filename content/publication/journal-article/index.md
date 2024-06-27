@@ -1,11 +1,12 @@
 ---
+publication_types: ["article-journal"]
 title: "Score-matching neural networks for improved multi-band source separation"
 authors:
-- admin
 - ML Sampson, P Melchior, C Ward, S Birmingham
 author_notes:
 date: "2024"
-url: www.arxiv.org/abs/2401.07313
+url_pdf: www.arxiv.org/abs/2401.07313
+url_code: https://github.com/pmelchior/scarlet2
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
