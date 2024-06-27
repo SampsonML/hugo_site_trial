@@ -53,7 +53,7 @@ education:
   - area: PhD Astrophysics and Machine Learning
     institution: Princeton University
     date_start: 2022-08-15
-    date_end: 2027-06-10
+    #date_end: 2027-06-10
   - area: MA Astrophysics and Machine Learning
     institution: Princeton University
     date_start: 2022-08-15
