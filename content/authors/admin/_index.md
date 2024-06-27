@@ -76,11 +76,15 @@ education:
 skills:
   - name: Technical Skills
     items:
-      - name: Python
+      - name: Python (JAX, pyTorch, equinox)
         description: ''
         percent: 80
         icon: code-bracket
-      - name: Data Science
+      - name: C++
+        description: ''
+        percent: 80
+        icon: code-bracket
+      - name: Computational Statistics
         description: ''
         percent: 100
         icon: chart-bar
@@ -107,6 +111,7 @@ skills:
 
 languages:
   - name: English
+  - percent: 100
 
 # Awards.
 #   Add/remove as many awards below as you like.
