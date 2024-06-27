@@ -78,19 +78,19 @@ skills:
     items:
       - name: Python (JAX, pyTorch, equinox)
         description: ''
-        percent: 80
+        #percent: 100
         icon: code-bracket
       - name: C++
         description: ''
-        percent: 80
+        #percent: 80
         icon: code-bracket
       - name: Computational Statistics
         description: ''
-        percent: 100
+        #percent: 100
         icon: chart-bar
       - name: SQL
         description: ''
-        percent: 40
+        #percent: 40
         icon: circle-stack
   - name: Hobbies
     color: '#eeac02'
@@ -111,7 +111,7 @@ skills:
 
 languages:
   - name: English
-  - percent: 100
+  #- percent: 100
 
 # Awards.
 #   Add/remove as many awards below as you like.
