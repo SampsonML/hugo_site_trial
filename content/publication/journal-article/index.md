@@ -9,6 +9,16 @@ url_pdf: 'www.arxiv.org/abs/2401.07313'
 url_code: 'https://github.com/pmelchior/scarlet2'
 doi: "https://doi.org/10.48550/arXiv.2401.07313"
 
+publication_types: ["article-journal"]
+title: "Spotting Hallucinations in Inverse Problems with Data-Driven Priors"
+authors:
+- ML Sampson, P Melchior
+author_notes:
+date: "2023-08-01T00:00:00Z"
+url_pdf: 'https://arxiv.org/abs/2306.13272'
+url_code: 'https://github.com/SampsonML/hallucination_score/tree/main'
+url_video: 'https://icml.cc/virtual/2023/28195'
+
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
