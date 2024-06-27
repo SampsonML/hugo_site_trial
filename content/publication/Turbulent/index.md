@@ -5,7 +5,7 @@ authors:
 - ML Sampson, JR Beattie, MR Krumholz, RM Crocker, C Federrath, A Seta
 author_notes:
 date: "2023-08-01T00:00:00Z"
-url_pdf: '[https://arxiv.org/abs/2306.13272](https://academic.oup.com/mnras/article/519/1/1503/6815731?login=true)'
+url_pdf: 'https://academic.oup.com/mnras/article/519/1/1503/6815731?'
 
 
 # Publication type.
