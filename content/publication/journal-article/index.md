@@ -12,11 +12,19 @@ doi: "https://doi.org/10.48550/arXiv.2401.07313"
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-#publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-#publication: "*Journal of Source Themes, 1*(1)"
-#publication_short: ""
+publication: "*Journal of Source Themes, 1*(1)"
+publication_types: ['paper-conference']
+title: "Spotting Hallucinations in Inverse Problems with Data-Driven Priors"
+authors:
+- ML Sampson, P Melchior
+author_notes:
+date: "2023-08-01T00:00:00Z"
+url_pdf: 'https://arxiv.org/abs/2306.13272'
+url_code: 'https://github.com/SampsonML/hallucination_score/tree/main'
+url_video: 'https://icml.cc/virtual/2023/28195'
+
 
 #abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac #convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, #scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. #Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in #dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat #est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
 
