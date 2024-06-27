@@ -3,7 +3,7 @@
 title: Matt Sampson
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+# name_pronunciation: Chien Shiung Wu
 
 # Full name (for SEO)
 first_name: Matthew Liam
@@ -52,10 +52,10 @@ interests:
   - Information Retrieval
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: PhD Astrophysics and Machine Learning
+    institution: Princeton University
+    date_start: 2022
+    date_end: 2026
     summary: |
       Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
     button:
@@ -183,4 +183,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am currently at Princeton University studying ways to advance science through the use of machine learning with a particular focus on modelling dynamical systems and geometric deep learning. Previously I was at the Australian National University where I performed numerical experiments and helped develop a code to simulate cosmic ray propagation through turbulent plasma. I have previously worked as a data scientist/computational statistician in fields of information geometry and biology.
