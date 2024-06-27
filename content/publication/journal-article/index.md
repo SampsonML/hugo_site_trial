@@ -5,12 +5,10 @@ authors:
 - ML Sampson, P Melchior, C Ward, S Birmingham
 author_notes:
 date: "2024"
-url_pdf: www.arxiv.org/abs/2401.07313
-url_code: https://github.com/pmelchior/scarlet2
-doi: ""
+url_pdf: 'www.arxiv.org/abs/2401.07313'
+url_code: 'https://github.com/pmelchior/scarlet2'
+doi: "https://doi.org/10.48550/arXiv.2401.07313"
 
-# Schedule page publish date (NOT publication's date).
-#publishDate: "2017-01-01T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
