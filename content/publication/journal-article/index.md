@@ -1,12 +1,11 @@
 ---
-title: "An example journal article"
+title: "Score-matching neural networks for improved multi-band source separation"
 authors:
 - admin
-- Robert Ford
+- ML Sampson, P Melchior, C Ward, S Birmingham
 author_notes:
-- "Equal contribution"
-- "Equal contribution"
-date: "2015-09-01T00:00:00Z"
+date: "2024"
+url: https://arxiv.org/abs/2401.07313
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
