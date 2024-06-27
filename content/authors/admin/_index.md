@@ -56,20 +56,20 @@ education:
     date_end: 2027
   - area: MA Astrophysics and Machine Learning
     institution: Princeton University
-    date_start: 2022-08-15
-    date_end: 2023-09-5
+    date_start: 2022
+    date_end: 2023
   - area: BHons Computational Astrohysics
     institution: Australian National University
-    date_start: 2021-02-3
-    date_end: 2021-12-10
+    date_start: 2021
+    date_end: 2021
   - area: BSc Computational Mathematics
     institution: Queensland University of Technology
-    date_start: 2017-02-02
-    date_end: 2020-11-15
+    date_start: 2017
+    date_end: 2020
   - area: BSc Physics
     institution: Queensland University of Technology
-    date_start: 2017-02-02
-    date_end: 2020-11-15
+    date_start: 2017
+    date_end: 2020
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
