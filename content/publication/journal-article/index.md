@@ -5,7 +5,7 @@ authors:
 - ML Sampson, P Melchior, C Ward, S Birmingham
 author_notes:
 date: "2024"
-url: https://arxiv.org/abs/2401.07313
+url: www.arxiv.org/abs/2401.07313
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
