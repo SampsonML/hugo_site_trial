@@ -53,12 +53,12 @@ education:
   - area: PhD Astrophysics and Machine Learning
     institution: Princeton University
     date_start: 2022
-    date_end: 2026
+    date_end: Current
   - area: MA Astrophysics and Machine Learning
     institution: Princeton University
     date_start: 2022
     date_end: 2023
-  - area: Honours Computational Astrohysics
+  - area: BHons Computational Astrohysics
     institution: Australian National University
     date_start: 2021
     date_end: 2021
