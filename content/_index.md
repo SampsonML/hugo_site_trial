@@ -40,5 +40,5 @@ sections:
         folders:
           - publication
     design:
-      view: citation
+      view: list #citation
 ---
