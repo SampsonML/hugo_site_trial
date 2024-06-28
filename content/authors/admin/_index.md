@@ -54,6 +54,9 @@ education:
     institution: Princeton University
     date_start: 2022-08-01
     date_end: 2026-09-01
+    summary: |
+    Focussing on machine learning for the natural sciences.
+    Advisors: Prof Peter Melchior and Prof Romain Teyssier
   - area: MA Astrophysics and Machine Learning
     institution: Princeton University
     date_start: 2022-02-01
