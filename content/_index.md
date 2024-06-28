@@ -24,9 +24,9 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: greens.png
+          filename: yellow.png
           filters:
-            brightness: 0.25
+            brightness: 0.15
           size: cover
           position: center
           parallax: true
