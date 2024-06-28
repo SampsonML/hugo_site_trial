@@ -29,7 +29,7 @@ sections:
             brightness: 0.25
           size: cover
           position: center
-          parallax: false
+          parallax: true
 
   - block: collection
     id: papers
