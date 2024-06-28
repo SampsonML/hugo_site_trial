@@ -26,7 +26,7 @@ sections:
           # Add your image background to `assets/media/`.
           filename: greens.png
           filters:
-            brightness: 0.5
+            brightness: 0.25
           size: cover
           position: center
           parallax: false
