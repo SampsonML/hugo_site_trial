@@ -1,5 +1,5 @@
 ---
-publication_types: ['paper-conference']
+publication_types: ['article-journal']
 title: "Turbulent diffusion of streaming cosmic rays in compressible, partially ionized plasma"
 authors:
 - ML Sampson, JR Beattie, MR Krumholz, RM Crocker, C Federrath, A Seta
