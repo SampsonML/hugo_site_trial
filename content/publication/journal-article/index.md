@@ -7,7 +7,6 @@ author_notes:
 date: "2024-02-01T00:00:00Z"
 url_pdf: 'www.arxiv.org/abs/2401.07313'
 url_code: 'https://github.com/pmelchior/scarlet2'
-doi: "https://doi.org/10.48550/arXiv.2401.07313"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
