@@ -26,7 +26,7 @@ sections:
           # Add your image background to `assets/media/`.
           filename: yellow.png
           filters:
-            brightness: 0.15
+            brightness: 0.3
           size: cover
           position: center
           parallax: true
