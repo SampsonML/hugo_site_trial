@@ -102,7 +102,7 @@ skills:
       - name: Guitar
         description: 'Formerly attended a performance academy for contempory guitar, these days just play for fun'
       - name: Teaching
-        description: 'I enjoy teaching students of all ages and capabilities about mathematics/physics/CS whether through the university of in my own time'
+        description: 'I enjoy teaching students of all ages and capabilities about mathematics/physics/CS whether through the university or in my own time'
 
 ---
 
