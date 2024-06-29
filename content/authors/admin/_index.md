@@ -95,6 +95,12 @@ skills:
         description: ''
         #percent: 100
         icon: chart-bar
+  - name: Hobbies
+    color: '#eeac02'
+    color_border: '#f0bf23'
+    items:
+      - name: Guitar
+        description: 'Formerly attended a performance academy for contempory guitar, these days just play for fun'
 
 ---
 
