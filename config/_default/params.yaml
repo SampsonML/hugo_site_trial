@@ -35,7 +35,7 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      text: "Matt Sampson"
+      text: ">_ Matt Sampson"
 
 # Site footer
 #footer:
