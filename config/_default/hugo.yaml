@@ -5,7 +5,7 @@
 
 # Website name
 #title: Hugo Academic CV Theme
-title: Matt Sampson
+title: >_ Matt Sampson
 # Website URL
 baseURL: 'https://www.msampson.net/'
 
