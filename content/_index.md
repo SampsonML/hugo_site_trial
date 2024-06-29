@@ -24,7 +24,7 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: nn.png
+          filename: nn.eps
           filters:
             brightness: 0.75
           size: cover
