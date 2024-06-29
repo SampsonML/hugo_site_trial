@@ -24,7 +24,7 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: nn3.svg
+          filename: moon.svg
           filters:
             brightness: 0.75
           size: cover
