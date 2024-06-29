@@ -34,7 +34,8 @@ header:
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
-    logo: assets/media/icon.png
+    logo: 
+      icon: assets/media/icon.png
       text: ">_ matt sampson"
 
 # Site footer
