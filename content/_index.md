@@ -24,7 +24,7 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: pyramid.png
+          filename: pyramid.svg
           filters:
             brightness: 0.5
           size: cover
