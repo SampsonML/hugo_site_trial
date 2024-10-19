@@ -17,7 +17,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: CV
-        url: uploads/sampsonCV_2024.pdf
+        url: uploads/SampsonMatt2024OctoberCV.pdf
     design:
       css_class: dark
       background:
