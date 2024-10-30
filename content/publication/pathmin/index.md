@@ -1,5 +1,5 @@
 ---
-publication_types: ['article-journal']
+publication_types: ["2"]
 title: "Path-minimizing Latent ODEs for improved extrapolation and inference"
 authors: ["ML Sampson", "P Melchior"]
 date: "2024-10-01"
