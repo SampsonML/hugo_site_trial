@@ -1,6 +1,6 @@
 ---
 publication_types: ['article-journal']
-title: "Cosmic ray interstellar propagation tool using Itô Calculus (criptic): software for simultaneous calculation of cosmic ray transport and observational signatures -- MNRAS"
+title: "Cosmic ray interstellar propagation tool using Itô Calculus (criptic): software for simultaneous calculation of cosmic ray transport and observational signatures. MNRAS"
 authors:
 - MR Krumholz, RM Crocker, ML Sampson
 author_notes:
