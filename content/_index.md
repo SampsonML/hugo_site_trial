@@ -24,9 +24,9 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: walp.svg
+          filename: cubp.svg
           filters:
-            brightness: 0.4
+            brightness: 0.3
           size: cover
           position: center
           parallax: true
