@@ -41,6 +41,6 @@ sections:
           - publication
       count: 6
     design:
-      view: card
+      view: citation
       columns: '2'
 ---
