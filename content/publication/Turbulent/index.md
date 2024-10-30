@@ -15,7 +15,6 @@ abstract: "Cosmic rays (CRs) are a dynamically important component of the inters
 ---
 **ML Sampson**, JR Beattie, MR Krumholz, RM Crocker, C Federrath, A Seta (2023)
 {{% callout note %}}
-\n
 Cosmic rays (CRs) are a dynamically important component of the interstellar medium (ISM) of galaxies. The ∼GeV CRs that carry most CR energy and pressure are likely confined by self-generated turbulence, leading them to stream along magnetic field lines at the ion Alfvén speed. However, the consequences of self-confinement for CR propagation on galaxy scales remain highly uncertain. In this paper, we use a large ensemble of magnetohydrodynamical turbulence simulations to quantify how the basic parameters describing ISM turbulence – the sonic Mach number, 
  (plasma compressibility), Alfvén Mach number, 
  (strength of the large-scale field with respect to the turbulence), and ionization fraction by mass, χ – affect the transport of streaming CRs. We show that the large-scale transport of CRs whose small-scale motion consists of streaming along field lines is well described as a combination of streaming along the mean field and superdiffusion both along (parallel to) and across (perpendicular to) it; 
