@@ -1,6 +1,6 @@
 ---
 publication_types: ["article-journal"]
-title: "Score-matching neural networks for improved multi-band source separation"
+title: "Score-matching neural networks for improved multi-band source separation - Astronomy and Computing"
 authors:
 - ML Sampson, P Melchior, C Ward, S Birmingham
 author_notes:
