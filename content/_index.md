@@ -26,7 +26,7 @@ sections:
           # Add your image background to `assets/media/`.
           filename: pyramid.svg
           filters:
-            brightness: 0.0
+            brightness: 0.01
           size: cover
           position: center
           parallax: true
