@@ -4,7 +4,7 @@ title: "Disentangling transients and their host galaxies with Scarlet2: A framew
 authors:
 - C Ward, P Melchior, ML Sampson, C Burke, J Siegel, B Remy, S Birmingham, E Ramey, S van Velzen
 author_notes:
-date: "2024-08-01T00:00:00Z"
+date: "2024-09-01T00:00:00Z"
 url_pdf: 'https://arxiv.org/abs/2410.08923'
 
 
