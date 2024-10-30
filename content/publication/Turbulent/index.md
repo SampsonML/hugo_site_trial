@@ -1,6 +1,6 @@
 ---
 publication_types: ['article-journal']
-title: "Turbulent diffusion of streaming cosmic rays in compressible, partially ionized plasma."
+title: "Turbulent diffusion of streaming cosmic rays in compressible, partially ionized plasma"
 authors: [ML Sampson, JR Beattie, MR Krumholz, RM Crocker, C Federrath, A Seta]
 author_notes:
 date: "2023-08-01T00:00:00Z"
