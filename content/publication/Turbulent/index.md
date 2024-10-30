@@ -13,7 +13,7 @@ abstract: "Cosmic rays (CRs) are a dynamically important component of the inters
  is unimportant except in the sub-Alfvénic (⁠
 ⁠) regime. Our finding that superdiffusion is ubiquitous potentially explains the apparent discrepancy between CR diffusion coefficients inferred from measurements close to individual sources compared to those measured on larger, Galactic scales. Finally, we present empirical fits for the diffusion coefficients as a function of plasma parameters that may be used as subgrid recipes for global ISM, galaxy, or cosmological simulations."
 ---
-
+**ML Sampson**, JR Beattie, MR Krumholz, RM Crocker, C Federrath, A Seta (2023) \
 {{% callout note %}}
 Cosmic rays (CRs) are a dynamically important component of the interstellar medium (ISM) of galaxies. The ∼GeV CRs that carry most CR energy and pressure are likely confined by self-generated turbulence, leading them to stream along magnetic field lines at the ion Alfvén speed. However, the consequences of self-confinement for CR propagation on galaxy scales remain highly uncertain. In this paper, we use a large ensemble of magnetohydrodynamical turbulence simulations to quantify how the basic parameters describing ISM turbulence – the sonic Mach number, 
  (plasma compressibility), Alfvén Mach number, 
