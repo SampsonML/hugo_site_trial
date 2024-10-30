@@ -42,5 +42,4 @@ sections:
     count: 0
     design:
       view: cite
-      columns: 2
 ---
