@@ -1,6 +1,6 @@
 ---
 publication_types: ['article-journal']
-title: "Path-minimizing Latent ODEs for improved extrapolation and inference -- MLST (full version) -- NeurIPS ML for Physical Sciences"
+title: "Path-minimizing Latent ODEs for improved extrapolation and inference. MLST (full version), NeurIPS ML for Physical Sciences"
 authors:
 - ML Sampson, P Melchior
 author_notes:
