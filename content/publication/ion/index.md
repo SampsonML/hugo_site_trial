@@ -1,8 +1,7 @@
 ---
 publication_types: ['paper-conference']
 title: "Ion alfvén velocity fluctuations and implications for the diffusion of streaming cosmic rays. Frontiers of Astronomy"
-authors:
-- JR Beattie, MR Krumholz, C Federrath, ML Sampson, RM Crocker
+authors: [JR Beattie, MR Krumholz, C Federrath, ML Sampson, RM Crocker]
 author_notes:
 date: "2022-08-01T00:00:00Z"
 url_pdf: 'https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3389/fspas.2022.900900/full'
