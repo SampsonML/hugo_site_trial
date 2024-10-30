@@ -45,8 +45,11 @@ profiles:
     url: https://twitter.com/Space_Boy_Matt
 
 interests:
-  - machine Learning
-  - computational Statistics
+  - machine learning
+  - deep learning
+  - neural/latent ODEs
+  - graph neural networks
+  - computational statistics
   - astrophysics
 
 education:
