@@ -41,6 +41,6 @@ sections:
           - publication
     count: 10
     design:
-      view: compact
+      view: cite
       columns: 2
 ---
