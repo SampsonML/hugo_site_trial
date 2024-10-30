@@ -41,5 +41,5 @@ sections:
           - publication
     count: 0
     design:
-      view: cite
+      view: list
 ---
