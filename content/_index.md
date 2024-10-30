@@ -41,6 +41,6 @@ sections:
           - publication
       count: 6
     design:
-      view: compact
+      view: card
       columns: '2'
 ---
