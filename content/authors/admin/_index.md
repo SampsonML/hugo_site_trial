@@ -105,6 +105,6 @@ skills:
 
 ---
 
-## about Me
+## about me
 
 I am currently at Princeton University studying ways to advance science through the use of machine learning with a particular focus on modelling dynamical systems and geometric deep learning. Previously I was at the Australian National University where I performed numerical experiments and helped develop a code to simulate cosmic ray propagation through turbulent plasma. I have also worked as a data scientist/computational statistician in fields of information geometry and biology.
