@@ -43,6 +43,5 @@ sections:
     design:
       # background:
       #  color: black
-      view: citation
-      columns: '2'
+      view: list
 ---
