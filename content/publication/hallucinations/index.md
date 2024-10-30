@@ -1,6 +1,6 @@
 ---
 publication_types: ['paper-conference']
-title: "Spotting Hallucinations in Inverse Problems with Data-Driven Priors."
+title: "Spotting Hallucinations in Inverse Problems with Data-Driven Priors"
 authors: [ML Sampson, P Melchior]
 author_notes:
 date: "2023-08-01T00:00:00Z"
