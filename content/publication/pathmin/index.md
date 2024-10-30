@@ -4,7 +4,7 @@ title: "Path-minimizing Latent ODEs for improved extrapolation and inference -- 
 authors:
 - ML Sampson, P Melchior
 author_notes:
-date: "2024-08-01T00:00:00Z"
+date: "2024-10-01T00:00:00Z"
 url_pdf: 'https://arxiv.org/abs/2410.08923'
 
 
