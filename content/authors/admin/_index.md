@@ -53,7 +53,6 @@ education:
   - area: PhD Astrophysics and Machine Learning
     institution: Princeton University
     date_start: 2022-08-01
-    date_end: "present"
     summary: |
       Focussing on machine learning for the natural sciences.
       Advisors: Prof Peter Melchior and Prof Romain Teyssier
