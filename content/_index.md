@@ -39,6 +39,8 @@ sections:
       filters:
         folders:
           - publication
+    count: 10
     design:
-      view: citation
+      view: compact
+      columns: 2
 ---
