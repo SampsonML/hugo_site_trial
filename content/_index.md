@@ -16,7 +16,7 @@ sections:
       text: ""
       # Show a call-to-action button under your biography? (optional)
       button:
-        text: CV
+        text: cv
         url: uploads/SampsonMattNovCV.pdf
     design:
       css_class: dark
@@ -34,7 +34,7 @@ sections:
   - block: collection
     id: papers
     content:
-      title: Recent publications
+      title: recent publications
       text: ""
       filters:
         folders:
