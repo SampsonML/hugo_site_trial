@@ -24,9 +24,9 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: pyramid.svg
+          filename: wallp.svg
           filters:
-            brightness: 0.01
+            brightness: 0.8
           size: cover
           position: center
           parallax: true
