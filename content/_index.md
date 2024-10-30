@@ -26,7 +26,7 @@ sections:
           # Add your image background to `assets/media/`.
           filename: walp.svg
           filters:
-            brightness: 0.8
+            brightness: 0.4
           size: cover
           position: center
           parallax: true
