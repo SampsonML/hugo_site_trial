@@ -43,5 +43,5 @@ sections:
     design:
       # background:
       #  color: black
-      view: list
+      view: card
 ---
