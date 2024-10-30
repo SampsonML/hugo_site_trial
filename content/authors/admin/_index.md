@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: PhD Candidate
+role: PhD candidate
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -45,12 +45,12 @@ profiles:
     url: https://twitter.com/Space_Boy_Matt
 
 interests:
-  - Machine Learning
-  - Computational Statistics
-  - Astrophysics
+  - machine Learning
+  - computational Statistics
+  - astrophysics
 
 education:
-  - area: PhD Astrophysics and Machine Learning
+  - area: PhD astrophysics and machine learning
     institution: Princeton University
     date_start: 2022-08-01
     summary: |
@@ -76,7 +76,7 @@ education:
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
-  - name: Technical Skills
+  - name: technical skills
     items:
       - name: Python (JAX, pyTorch, equinox)
         description: ''
@@ -94,7 +94,7 @@ skills:
         description: ''
         #percent: 100
         icon: chart-bar
-  - name: Hobbies
+  - name: hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
@@ -105,6 +105,6 @@ skills:
 
 ---
 
-## About Me
+## about Me
 
 I am currently at Princeton University studying ways to advance science through the use of machine learning with a particular focus on modelling dynamical systems and geometric deep learning. Previously I was at the Australian National University where I performed numerical experiments and helped develop a code to simulate cosmic ray propagation through turbulent plasma. I have also worked as a data scientist/computational statistician in fields of information geometry and biology.
