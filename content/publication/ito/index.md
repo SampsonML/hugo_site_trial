@@ -1,7 +1,7 @@
 ---
 publication_types: ['article-journal']
 title: "Cosmic ray interstellar propagation tool using Itô Calculus (criptic): software for simultaneous calculation of cosmic ray transport and observational signatures"
-authors: ["MR Krumholz", "RM Crocker", "**ML Sampson**"]
+authors: ["MR Krumholz", "RM Crocker", "ML Sampson"]
 author_notes:
 date: "2022-10-01T00:00:00Z"
 url_pdf: 'https://arxiv.org/abs/2207.13838'
