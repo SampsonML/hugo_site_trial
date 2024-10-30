@@ -1,6 +1,6 @@
 ---
 publication_types: ['article-journal']
-title: "Path-minimizing Latent ODEs for improved extrapolation and inference."
+title: "Path-minimizing Latent ODEs for improved extrapolation and inference"
 authors: ["ML Sampson", "P Melchior"]
 date: "2024-10-01"
 url_pdf: 'https://arxiv.org/abs/2410.08923'
