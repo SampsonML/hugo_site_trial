@@ -41,8 +41,8 @@ sections:
           - publication
       count: 6
     design:
-      background:
-        color: black
+      # background:
+      #  color: black
       view: citation
       columns: '2'
 ---
