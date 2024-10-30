@@ -1,8 +1,7 @@
 ---
 publication_types: ['article-journal']
 title: "Turbulent diffusion of streaming cosmic rays in compressible, partially ionized plasma. MNRAS"
-authors:
-- ML Sampson, JR Beattie, MR Krumholz, RM Crocker, C Federrath, A Seta
+authors: [ML Sampson, JR Beattie, MR Krumholz, RM Crocker, C Federrath, A Seta]
 author_notes:
 date: "2023-08-01T00:00:00Z"
 url_pdf: 'https://academic.oup.com/mnras/article/519/1/1503/6815731?'
