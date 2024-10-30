@@ -1,8 +1,7 @@
 ---
 publication_types: ['paper-conference']
 title: "Spotting Hallucinations in Inverse Problems with Data-Driven Priors. ICML Workshop Spotlight Talk"
-authors:
-- ML Sampson, P Melchior
+authors: [ML Sampson, P Melchior]
 author_notes:
 date: "2023-08-01T00:00:00Z"
 url_pdf: 'https://arxiv.org/abs/2306.13272'
