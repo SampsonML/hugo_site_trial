@@ -39,7 +39,7 @@ sections:
       filters:
         folders:
           - publication
-    count: 6
+      count: 6
     design:
       view: citation
       columns: '2'
