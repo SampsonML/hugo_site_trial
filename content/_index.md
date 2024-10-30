@@ -39,7 +39,6 @@ sections:
       filters:
         folders:
           - publication
-    count: 0
     design:
-      view: list
+      view: cite
 ---
