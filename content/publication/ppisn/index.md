@@ -1,6 +1,6 @@
 ---
 publication_types: ['article-journal']
-title: "The impact of pair-instability mass loss on the binary black hole mass distribution"
+title: "The impact of pair-instability mass loss on the binary black hole mass distribution -- ApJ"
 authors:
 - S Stevenson, ML Sampson, J Powell, A Vigna-Gómez, C Neijssel, D Szécsi, I Mandel
 author_notes:
