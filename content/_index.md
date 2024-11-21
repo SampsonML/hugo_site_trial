@@ -31,7 +31,9 @@ sections:
           position: center
           parallax: true
 
-  - block: collection
+---
+
+  #- block: collection
     id: papers
     content:
       title: recent publications
