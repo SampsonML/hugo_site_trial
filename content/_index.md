@@ -31,7 +31,7 @@ sections:
           position: center
           parallax: true
   
-  - block: collection
+  - block: buttons
     content:
       buttons:
         - title: github
