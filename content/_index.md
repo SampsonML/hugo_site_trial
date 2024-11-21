@@ -38,7 +38,7 @@ sections:
       #text: ""
       #filters:
       #  folders:
-          - publication
+      #    - publication
       #count: 6
     #design:
     #  view: citation
