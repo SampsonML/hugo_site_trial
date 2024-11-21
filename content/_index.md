@@ -30,6 +30,13 @@ sections:
           size: cover
           position: center
           parallax: true
+  
+  - block: collection
+    content:
+      buttons:
+        - title: Read my latest paper on LLMs
+          icon: brands/arxiv
+          url: https://arxiv.org/abs/2304.01852
 
 
 ---
