@@ -31,15 +31,15 @@ sections:
           position: center
           parallax: true
 
-  #- block: collection
+  - block: collection
     id: papers
-    content:
-      title: recent publications
-      text: ""
-      filters:
-        folders:
+    #content:
+     # title: recent publications
+      #text: ""
+      #filters:
+      #  folders:
           - publication
-      count: 6
-    design:
-      view: citation
+      #count: 6
+    #design:
+    #  view: citation
 ---
