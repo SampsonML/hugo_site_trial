@@ -26,12 +26,12 @@ sections:
           # Add your image background to `assets/media/`.
           filename: cubp.svg
           filters:
-            brightness: 0.3
+            brightness: 0.0
           size: cover
           position: center
           parallax: true
 
-  - block: collection
+  #- block: collection
     id: papers
     content:
       title: recent publications
