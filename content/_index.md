@@ -18,7 +18,7 @@ sections:
       button:
         text: cv
         url: uploads/SampsonMattNovCV.pdf
-    buttons:
+      buttons:
         - title: github
           icon: brands/github
           url: https://github.com/SampsonML
