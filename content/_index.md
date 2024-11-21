@@ -31,11 +31,6 @@ sections:
           position: center
           parallax: true
 
-  - block: buttons
-     content:
-       button: 
-         icon: brands/github
-         url: https://github.com/SampsonML
 
 ---
 
