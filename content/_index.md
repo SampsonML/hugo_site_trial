@@ -18,6 +18,10 @@ sections:
       button:
         text: cv
         url: uploads/SampsonMattNovCV.pdf
+    buttons:
+        - title: github
+          icon: brands/github
+          url: https://github.com/SampsonML
     design:
       css_class: dark
       background:
@@ -31,14 +35,6 @@ sections:
           position: center
           parallax: true
   
-  - block: buttons
-    content:
-      buttons:
-        - title: github
-          icon: brands/github
-          url: https://github.com/SampsonML
-
-
 ---
 
   #- block: collection
