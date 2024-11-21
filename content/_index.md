@@ -33,10 +33,9 @@ sections:
 
   - block: buttons
      content:
-       buttons:
-         - title: 
-           icon: brands/github
-           url: https://github.com/SampsonML
+       button: 
+         icon: brands/github
+         url: https://github.com/SampsonML
 
 ---
 
