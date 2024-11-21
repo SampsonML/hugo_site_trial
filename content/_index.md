@@ -31,7 +31,7 @@ sections:
           position: center
           parallax: true
 
- - block: buttons
+ - block: collections
     content:
       buttons:
         - title: 
