@@ -31,6 +31,13 @@ sections:
           position: center
           parallax: true
 
+ - block: buttons
+    content:
+      buttons:
+        - title: 
+          icon: brands/github
+          url: https://github.com/SampsonML
+
 ---
 
   #- block: collection
