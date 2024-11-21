@@ -34,9 +34,9 @@ sections:
   - block: collection
     content:
       buttons:
-        - title: 
-        icon: brands/github
-        url: https://github.com/SampsonML
+        - title: Read my latest paper on LLMs
+          icon: brands/arxiv
+          url: https://arxiv.org/abs/2304.01852
 
 
 ---
