@@ -27,7 +27,7 @@ sections:
           filename: wallpaper_website.jpg
           filters:
             brightness: 0.4
-          size: contain
+          size: cover
           position: center
           parallax: true
   
