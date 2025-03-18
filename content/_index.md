@@ -68,10 +68,7 @@ sections:
 
   - block: markdown
     content:
-      text: "
-
-
-    "
+      text: ""
     design:
       css_class: dark
       background:
@@ -80,26 +77,39 @@ sections:
           # Add your image background to `assets/media/`.
           filename:  wallpaper_website2.jpg 
           filters:
-            brightness: 0.35
+            brightness: 0.4
           size: cover
           position: center
           parallax: true
 
   - block: markdown
     content:
-      text: "
-
-
-    "
+      text: ""
     design:
       css_class: dark
       background:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename:  wallpaper_website2.jpg 
+          filename:  wallpaper_website3.jpg 
           filters:
-            brightness: 0.35
+            brightness: 0.4
+          size: cover
+          position: center
+          parallax: true
+
+  - block: markdown
+    content:
+      text: ""
+    design:
+      css_class: dark
+      background:
+        color: black
+        image:
+          # Add your image background to `assets/media/`.
+          filename:  wallpaper_website3.jpg 
+          filters:
+            brightness: 0.4
           size: cover
           position: center
           parallax: true
