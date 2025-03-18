@@ -24,7 +24,8 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: wallpaper_website.jpg
+          #wallpaper_website.jpg
+          filename:  wallpaper-glitch.gif 
           filters:
             brightness: 0.4
           size: cover
