@@ -32,16 +32,3 @@ sections:
           parallax: true
   
 ---
-
-  #- block: collection
-    id: papers
-    content:
-      title: recent publications
-      text: ""
-      filters:
-        folders:
-          - publication
-      count: 6
-    design:
-      view: citation
----
