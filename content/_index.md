@@ -32,6 +32,6 @@ sections:
           parallax: true
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ['20px', '0', '60px', '0']
+      padding: ['100px', '0', '1000px', '0']
   
 ---
