@@ -24,7 +24,6 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          #wallpaper_website.jpg
           filename:  wallpaper_website.jpg 
           filters:
             brightness: 0.4
