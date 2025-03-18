@@ -25,7 +25,7 @@ sections:
         image:
           # Add your image background to `assets/media/`.
           #wallpaper_website.jpg
-          filename:  wallpaper-glitch.gif 
+          filename:  wallpaper_website.jpg 
           filters:
             brightness: 0.4
           size: cover
@@ -33,6 +33,6 @@ sections:
           parallax: true
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ['100px', '0', '1000px', '0']
+      padding: ['100px', '0', '5000px', '0']
   
 ---
