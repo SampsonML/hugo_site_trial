@@ -33,6 +33,7 @@ sections:
 
   - block: markdown
     content:
+      text: ""
     design:
       css_class: dark
       background:
