@@ -30,5 +30,8 @@ sections:
           size: cover
           position: center
           parallax: true
+    spacing:
+    # Customize the section spacing. Order is top, right, bottom, left.
+      padding: ['20px', '0', '60px', '0']
   
 ---
