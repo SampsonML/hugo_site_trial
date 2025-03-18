@@ -30,4 +30,19 @@ sections:
           size: cover
           position: center
           parallax: true
+
+  - block: markdown
+    content:
+    design:
+      css_class: dark
+      background:
+        color: black
+        image:
+          # Add your image background to `assets/media/`.
+          filename:  wallpaper_website.jpg 
+          filters:
+            brightness: 0.35
+          size: cover
+          position: center
+          parallax: true
 ---
