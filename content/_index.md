@@ -49,7 +49,10 @@ sections:
 
   - block: markdown
     content:
-      text: ""
+      text: "
+
+
+    "
     design:
       css_class: dark
       background:
@@ -65,14 +68,17 @@ sections:
 
   - block: markdown
     content:
-      text: ""
+      text: "
+
+
+    "
     design:
       css_class: dark
       background:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename:  wallpaper_website3.jpg 
+          filename:  wallpaper_website2.jpg 
           filters:
             brightness: 0.35
           size: cover
@@ -81,7 +87,10 @@ sections:
 
   - block: markdown
     content:
-      text: ""
+      text: "
+
+
+    "
     design:
       css_class: dark
       background:
