@@ -24,9 +24,9 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: cubp.svg
+          filename: wallpaper_website.jpg
           filters:
-            brightness: 0.01
+            brightness: 0.9
           size: cover
           position: center
           parallax: true
