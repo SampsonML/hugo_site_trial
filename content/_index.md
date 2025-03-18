@@ -24,7 +24,7 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename:  wallpaper_website5.jpg 
+          filename:  wallpaper_website5.png 
           filters:
             brightness: 0.4
           size: cover
@@ -40,7 +40,7 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename:  wallpaper_website5.jpg 
+          filename:  wallpaper_website5.png
           filters:
             brightness: 0.4
           size: cover
@@ -56,7 +56,7 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename:  wallpaper_website5.jpg 
+          filename:  wallpaper_website5.png 
           filters:
             brightness: 0.4
           size: cover
@@ -72,7 +72,7 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename:  wallpaper_website5.jpg 
+          filename:  wallpaper_website5.png 
           filters:
             brightness: 0.4
           size: cover
