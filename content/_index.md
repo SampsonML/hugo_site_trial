@@ -27,6 +27,7 @@ sections:
           filename: wallpaper_website.jpg
           filters:
             brightness: 0.45
+            GaussianBlur: 5
           size: cover
           position: center
           parallax: true
