@@ -26,8 +26,7 @@ sections:
           # Add your image background to `assets/media/`.
           filename: wallpaper_website.jpg
           filters:
-            brightness: 0.45
-            GaussianBlur: 5
+            brightness: 0.4
           size: cover
           position: center
           parallax: true
