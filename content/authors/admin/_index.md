@@ -121,29 +121,6 @@ I am currently at Princeton University studying ways to advance science through 
 
 
 
----
-
-
-
-
-
-
-
-
-
-
-
----
-
-
-
-
-
-
-
-
-
-
 
 
 
