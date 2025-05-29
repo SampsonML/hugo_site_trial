@@ -90,7 +90,7 @@ skills:
   <a href="https://orcid.org/0000-0001-5748-5393" class="download-cv">ORCID</a>
   <a href="https://www.linkedin.com/in/matt-sampson-b56b8113b/" class="download-cv">LinkedIn</a>
   <a href="https://twitter.com/Space_Boy_Matt" class="download-cv">X</a>
-  <a href="/uploads/AcademicCVSampsonMatt.pdf" class="cv" download>Download CV</a>
+  <a href="/uploads/AcademicCVSampsonMatt.pdf" class="download-cv" download>cv</a>
 </div>
 
 <h2 style="color: #9be7c4; margin: 0;">about me</h2>
