@@ -137,66 +137,26 @@ a:hover {
   color: #ff9933;
   font-family: 'Courier New', Courier, monospace;
   padding: 2rem;
-  z-index: 99999; /* very high to cover everything */
+  z-index: 99999;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 1.2rem;
-  animation: bootFadeOut 0.8s ease 3s forwards;
   pointer-events: all;
 }
 
-@keyframes bootFadeOut {
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-body.loading {
-  overflow: hidden;
-}
-
-# hide site when bootloader animation shows 
-/* Completely hide main content while boot screen is active */
-body.loading main,
-body.loading header,
-body.loading footer,
-body.loading .hero,
-body.loading .page-wrapper,
-body.loading .content,
-body.loading .profile-center {
-  opacity: 0 !important;
-  pointer-events: none !important;
-}
-
-
-# slowly fade in
-/* Smooth fade-in when boot screen ends */
-main,
-header,
-footer,
-.hero,
-.page-wrapper,
-.content,
-.profile-center {
-  transition: opacity 0.6s ease;
-}
-
-/* Boot line typing effect */
 .boot-line {
   overflow: hidden;
   display: inline-block;
   white-space: nowrap;
   width: 0;
-  font-family: 'Courier New', Courier, monospace;
   animation: typeBoot 1.2s steps(30, end) forwards;
   animation-delay: var(--delay);
 }
 
 @keyframes typeBoot {
   from { width: 0; }
-  to { width: 30ch; } /* Adjust to match line length */
+  to { width: 30ch; } /* Adjust to match your text length */
 }
 
 .cursor {
@@ -208,6 +168,29 @@ footer,
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
+}
+
+/* Hide site during boot */
+body.loading main,
+body.loading header,
+body.loading footer,
+body.loading .hero,
+body.loading .page-wrapper,
+body.loading .content,
+body.loading .profile-center {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Fade in site after boot */
+main,
+header,
+footer,
+.hero,
+.page-wrapper,
+.content,
+.profile-center {
+  transition: opacity 0.6s ease;
 }
 
 
