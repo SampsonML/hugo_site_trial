@@ -13,4 +13,22 @@
   }, 2600);
 </script>
 
+<!-- Theme Switcher -->
+<div class="theme-switcher">
+  <button onclick="setTheme('green')">Green</button>
+  <button onclick="setTheme('orange')">Orange</button>
+  <button onclick="setTheme('blue')">Blue</button>
+</div>
+
+<script>
+function setTheme(theme) {
+  document.body.setAttribute('data-theme', theme);
+  localStorage.setItem('crt-theme', theme);
+}
+window.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('crt-theme') || 'green';
+  setTheme(savedTheme);
+});
+</script>
+
 
