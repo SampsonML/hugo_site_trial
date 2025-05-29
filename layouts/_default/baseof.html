@@ -28,6 +28,19 @@
 
     <!-- Inject the boot screen animation partial -->
     {{ partial "body-end.html" . }}
+
+    <script>
+    function setTheme(theme) {
+    document.body.setAttribute('data-theme', theme);
+    localStorage.setItem('crt-theme', theme);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('crt-theme') || 'green';
+      setTheme(savedTheme);
+    });
+    </script>
+
   </body>
 </html>
 
