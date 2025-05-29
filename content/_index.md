@@ -26,7 +26,7 @@ sections:
           # Add your image background to `assets/media/`.
           filename:  wallpaper_website5.png 
           filters:
-            brightness: 0.4
+            brightness: 0.2
           size: cover
           position: center
           parallax: true
@@ -58,7 +58,7 @@ sections:
           # Add your image background to `assets/media/`.
           filename:  wallpaper_website5.png 
           filters:
-            brightness: 0.4
+            brightness: 0.2
           size: cover
           position: center
           parallax: true
@@ -74,7 +74,7 @@ sections:
           # Add your image background to `assets/media/`.
           filename:  wallpaper_website5.png 
           filters:
-            brightness: 0.4
+            brightness: 0.2
           size: cover
           position: center
           parallax: true
@@ -90,7 +90,7 @@ sections:
           # Add your image background to `assets/media/`.
           filename:  wallpaper_website5.png 
           filters:
-            brightness: 0.4
+            brightness: 0.2
           size: cover
           position: center
           parallax: true
