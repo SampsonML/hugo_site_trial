@@ -44,37 +44,7 @@ profiles:
   - icon: brands/x
     url: https://twitter.com/Space_Boy_Matt
 
-#interests:
-#  - machine learning
-#  - deep learning
-#  - neural/latent ODEs
-#  - graph neural networks
-#  - computational statistics
-#  - astrophysics
 
-#education:
-#  - area: PhD astrophysics and machine learning
-    institution: Princeton University
-    date_start: 2022-08-01
-    summary: |
-      Focussing on machine learning for the natural sciences.
-      Advisors: Prof Peter Melchior and Prof Romain Teyssier
-#  - area: MA Astrophysics and Machine Learning
-    institution: Princeton University
-    date_start: 2022-02-01
-    date_end: 2023-05-01
-#  - area: BHons Computational Astrohysics
-    institution: Australian National University
-    date_start: 2021-02-01
-    date_end: 2021-11-01
-#  - area: BSc Computational Mathematics
-    institution: Queensland University of Technology
-    date_start: 2017-02-01
-    date_end: 2020-11-01
-#  - area: BSc Physics
-    institution: Queensland University of Technology
-    date_start: 2017-02-01
-    date_end: 2020-11-01
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
