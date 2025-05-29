@@ -24,3 +24,30 @@ a[href*="cv"], a[download], .btn, button {
   text-shadow: 0 0 5px #00FF00 !important;
   text-transform: uppercase;
 }
+
+/* Style for large download icon buttons */
+a[href*="cv"], a[download], .btn, .button {
+  border: 2px solid #00FF00 !important;
+  padding: 0.5em 1em !important;
+  background-color: transparent !important;
+  color: #00FF00 !important;
+  display: inline-block !important;
+  font-family: 'Courier New', Courier, monospace !important;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #00FF00;
+  font-size: 14px !important;
+  line-height: 1.2;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Reduce icon size inside the button */
+a[href*="cv"] svg,
+a[download] svg,
+a[href*="cv"] i,
+a[download] i {
+  width: 1em !important;
+  height: 1em !important;
+  vertical-align: middle;
+  margin-right: 0.3em;
+}
