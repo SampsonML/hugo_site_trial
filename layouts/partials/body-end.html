@@ -13,11 +13,17 @@
   }, 2600);
 </script>
 
-<!-- Theme Switcher -->
+<!-- Theme Switcher with LED indicators -->
 <div class="theme-switcher">
-  <button onclick="setTheme('green')">IBM Green</button>
-  <button onclick="setTheme('orange')">VT320 Amber</button>
-  <button onclick="setTheme('blue')">ADM Blue</button>
+  <button onclick="setTheme('green')">
+    <span class="led" data-theme="green"></span> IBM Green
+  </button>
+  <button onclick="setTheme('orange')">
+    <span class="led" data-theme="orange"></span> VT320 Amber
+  </button>
+  <button onclick="setTheme('blue')">
+    <span class="led" data-theme="blue"></span> ADM Blue
+  </button>
 </div>
 
 <script>
