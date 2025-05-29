@@ -25,7 +25,7 @@ highlight_name: true
 # Organizations/Affiliations to display in Biography blox
 # organizations:
 #  - name: Princeton University
-    url: https://web.astro.princeton.edu/people/matthew-sampson
+#    url: https://web.astro.princeton.edu/people/matthew-sampson
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
