@@ -18,10 +18,10 @@ superuser: true
 highlight_name: true
 
 ---
-<div class="profile-block">
-  <img src="/static/img/matt_p.png" alt="Matt Sampson" class="profile-photo" />
+<div class="profile-center">
+  <img src="static/img/matt_p.png" alt="Matt Sampson" class="profile-photo" />
 
-  <h2 class="profile-name">Matt Sampson</h2>
+  <h2 class="profile-name">matt sampson</h2>
 
   <p class="profile-role">
     PhD candidate at
@@ -39,6 +39,7 @@ highlight_name: true
     <a href="/uploads/AcademicCVSampsonMatt.pdf" class="download-cv" download>CV</a>
   </div>
 </div>
+
 
 
 
