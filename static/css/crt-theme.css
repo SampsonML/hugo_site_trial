@@ -88,40 +88,37 @@ a:hover {
 }
 
 .typewriter-line {
-  display: inline-flex; /* was inline-block or flex */
-  position: relative;
-  font-family: 'Courier New', Courier, monospace !important;
-  overflow: visible !important; /* key fix */
+  display: inline-flex;
+  font-family: 'Courier New', Courier, monospace;
   white-space: nowrap;
+  position: relative;
+  overflow: visible; /* Don't clip the moving cursor */
 }
 
-
 .typewriter-text {
+  overflow: hidden;
   display: inline-block;
-  animation: typing-move 2.5s steps(13, end) forwards;
+  width: 0;
+  animation: typing-move 2.2s steps(13, end) forwards;
 }
 
 .moving-cursor {
-  display: inline-block;
   position: absolute;
   left: 0;
   animation: moveCursor 2.2s steps(13, end) forwards, blink 1s steps(1) infinite;
   margin-left: 0.1ch;
 }
 
-/* Typing text width animation */
 @keyframes typing-move {
   from { width: 0; }
-  to { width: 13ch; }
+  to { width: 13ch; }  /* Adjust based on name length */
 }
 
-/* Move cursor horizontally along with typing */
 @keyframes moveCursor {
   from { left: 0ch; }
   to { left: 13ch; }
 }
 
-/* Blinking effect */
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
