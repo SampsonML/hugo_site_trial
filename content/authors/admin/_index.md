@@ -19,9 +19,9 @@ highlight_name: true
 
 ---
 <div class="profile-block">
-  <img src="/static/img/matt_p.png" alt="Matt Sampson" class="profile-photo" />
+  <img src="static/img/matt_p.npg" alt="Matt Sampson" class="profile-photo" />
 
-  <h2 class="profile-name">matt sampson</h2>
+  <h2 class="profile-name">Matt Sampson</h2>
 
   <p class="profile-role">
     PhD candidate at
@@ -39,6 +39,7 @@ highlight_name: true
     <a href="/uploads/AcademicCVSampsonMatt.pdf" class="download-cv" download>CV</a>
   </div>
 </div>
+
 
 
 
