@@ -13,8 +13,8 @@ sections:
     content:
       text: >
         <div id="boot-screen">
-          <p>> Booting matt.sampson...</p>
-          <p>> Initializing AI Stack <span class="cursor">▊</span></p>
+          <p>> Booting ...</p>
+          <p>> Initializing user info <span class="cursor">▊</span></p>
         </div>
         <script>
           document.body.classList.add("loading");
