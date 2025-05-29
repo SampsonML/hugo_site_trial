@@ -284,38 +284,26 @@ body::after {
   height: 12px;
   margin-right: 0.5rem;
   border-radius: 50%;
-  background-color: red; /* Red center */
-  border: 1px solid var(--crt-color);
+  background-color: red;
+  border: 1px solid red;
   box-shadow: none;
   transition: all 0.3s ease;
 }
 
-.led::after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  z-index: -1;
-  background: transparent;
+/* Active LED gets a soft red pulse */
+body[data-theme="green"] .led[data-theme="green"],
+body[data-theme="orange"] .led[data-theme="orange"],
+body[data-theme="blue"] .led[data-theme="blue"] {
+  box-shadow: 0 0 6px red, 0 0 10px red;
+  animation: redPulse 1.6s ease-in-out infinite;
 }
 
-/* Active theme = glowing outer ring with pulse */
-body[data-theme="green"] .led[data-theme="green"]::after,
-body[data-theme="orange"] .led[data-theme="orange"]::after,
-body[data-theme="blue"] .led[data-theme="blue"]::after {
-  animation: ledPulse 2s infinite ease-in-out;
-  box-shadow: 0 0 6px var(--crt-color), 0 0 12px var(--crt-color);
-}
-
-@keyframes ledPulse {
+@keyframes redPulse {
   0%, 100% {
-    box-shadow: 0 0 6px var(--crt-color), 0 0 12px var(--crt-color);
+    box-shadow: 0 0 5px red, 0 0 8px red;
   }
   50% {
-    box-shadow: 0 0 10px var(--crt-color), 0 0 18px var(--crt-color);
+    box-shadow: 0 0 10px red, 0 0 16px red;
   }
 }
 
