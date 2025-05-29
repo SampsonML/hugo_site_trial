@@ -284,34 +284,34 @@ body::after {
   height: 12px;
   margin-right: 0.5rem;
   border-radius: 50%;
-  background-color: #1a0000; /* very dim red when inactive */
-  border: 1px solid #1a0000;
+  background-color: #111; /* dim/off state */
+  border: 1px solid #111;
   box-shadow: none;
   transition: all 0.3s ease;
 }
 
-/* Active LED — soft red glow with transparency */
+/* Active LED — soft, transparent white glow */
 body[data-theme="green"] .led[data-theme="green"],
 body[data-theme="orange"] .led[data-theme="orange"],
 body[data-theme="blue"] .led[data-theme="blue"] {
-  background-color: rgba(255, 0, 0, 0.6); /* semi-transparent red */
-  border-color: rgba(255, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);  /* dim white center */
+  border-color: rgba(255, 255, 255, 0.2);
   box-shadow:
-    0 0 6px rgba(255, 0, 0, 0.4),
-    0 0 12px rgba(255, 0, 0, 0.3);
-  animation: redPulse 1.6s ease-in-out infinite;
+    0 0 4px rgba(255, 255, 255, 0.15),
+    0 0 8px rgba(255, 255, 255, 0.1);
+  animation: whitePulse 1.6s ease-in-out infinite;
 }
 
-@keyframes redPulse {
+@keyframes whitePulse {
   0%, 100% {
     box-shadow:
-      0 0 6px rgba(255, 0, 0, 0.4),
-      0 0 12px rgba(255, 0, 0, 0.3);
+      0 0 4px rgba(255, 255, 255, 0.15),
+      0 0 8px rgba(255, 255, 255, 0.1);
   }
   50% {
     box-shadow:
-      0 0 10px rgba(255, 0, 0, 0.5),
-      0 0 18px rgba(255, 0, 0, 0.4);
+      0 0 8px rgba(255, 255, 255, 0.2),
+      0 0 12px rgba(255, 255, 255, 0.15);
   }
 }
 
