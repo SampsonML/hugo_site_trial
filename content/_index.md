@@ -15,7 +15,7 @@ sections:
         <div id="boot-screen">
           <p class="boot-line" style="--delay: 0s;">&gt; booting system...<span 
           class="cursor">▊</span></p>
-          <p class="boot-line" style="--delay: 1.2s;">&gt; loading user information k<span 
+          <p class="boot-line" style="--delay: 1.2s;">&gt; loading user information...<span 
           class="cursor">▊</span></p>
         </div>
         <script>
