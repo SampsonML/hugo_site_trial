@@ -1,13 +1,13 @@
 /* CRT Terminal Theme */
 html, body, main, section, div, header, footer, nav, article {
   background-color: black !important;
-  color: #99ffcc !important;
+  color: #66ff99 !important;
   font-family: 'Courier New', Courier, monospace !important;
-  text-shadow: 0 0 5px #99ffcc !important;
+  text-shadow: 0 0 3px #66ff99 !important;
 }
 
 a, a:visited {
-  color: #99ffcc !important;
+  color: #66ff99 !important;
   text-decoration: underline !important;
 }
 
@@ -25,11 +25,11 @@ a:hover {
   border: 2px solid #99ffcc !important;
   padding: 0.5em 1em !important;
   background-color: transparent !important;
-  color: #99ffcc !important;
+  color: #66ff99 !important;
   display: inline-block !important;
   font-family: 'Courier New', Courier, monospace !important;
   text-transform: uppercase;
-  text-shadow: 0 0 5px #99ffcc;
+  text-shadow: 0 0 5px #66ff99;
   font-size: 14px !important;
   line-height: 1.2;
   text-align: center;
