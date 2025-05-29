@@ -16,7 +16,7 @@ sections:
       text: ""
       # Show a call-to-action button under your biography? (optional)
       button:
-        text: cv
+        text: 'download cv <span class="cursor">▊</span>'
         url: uploads/AcademicCVSampsonMatt.pdf
     design:
       css_class: dark
