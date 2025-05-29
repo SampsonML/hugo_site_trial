@@ -284,28 +284,34 @@ body::after {
   height: 12px;
   margin-right: 0.5rem;
   border-radius: 50%;
-  background-color: #330000; /* dim red center by default */
-  border: 1px solid #330000;
+  background-color: #1a0000; /* very dim red when inactive */
+  border: 1px solid #1a0000;
   box-shadow: none;
   transition: all 0.3s ease;
 }
 
-/* Active theme gets a soft centered red glow */
+/* Active LED — soft red glow with transparency */
 body[data-theme="green"] .led[data-theme="green"],
 body[data-theme="orange"] .led[data-theme="orange"],
 body[data-theme="blue"] .led[data-theme="blue"] {
-  background-color: red;
-  border-color: red;
-  box-shadow: 0 0 6px red, 0 0 10px red;
+  background-color: rgba(255, 0, 0, 0.6); /* semi-transparent red */
+  border-color: rgba(255, 0, 0, 0.4);
+  box-shadow:
+    0 0 6px rgba(255, 0, 0, 0.4),
+    0 0 12px rgba(255, 0, 0, 0.3);
   animation: redPulse 1.6s ease-in-out infinite;
 }
 
 @keyframes redPulse {
   0%, 100% {
-    box-shadow: 0 0 6px red, 0 0 10px red;
+    box-shadow:
+      0 0 6px rgba(255, 0, 0, 0.4),
+      0 0 12px rgba(255, 0, 0, 0.3);
   }
   50% {
-    box-shadow: 0 0 10px red, 0 0 14px red;
+    box-shadow:
+      0 0 10px rgba(255, 0, 0, 0.5),
+      0 0 18px rgba(255, 0, 0, 0.4);
   }
 }
 
