@@ -183,6 +183,34 @@ footer,
   transition: opacity 0.6s ease;
 }
 
+/* Boot line typing effect */
+.boot-line {
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  width: 0;
+  font-family: 'Courier New', Courier, monospace;
+  animation: typeBoot 1.2s steps(30, end) forwards;
+  animation-delay: var(--delay);
+}
+
+@keyframes typeBoot {
+  from { width: 0; }
+  to { width: 30ch; } /* Adjust to match line length */
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 1s steps(1) infinite;
+  margin-left: 0.2ch;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
 
 
 
