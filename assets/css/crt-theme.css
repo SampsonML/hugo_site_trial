@@ -1,0 +1,44 @@
+/* CRT Terminal Theme */
+body {
+  background-color: black;
+  color: #00FF00;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  text-shadow: 0 0 5px #00FF00;
+}
+
+a {
+  color: #00FF00;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #00FF00;
+  background-color: #003300;
+}
+
+header, footer, nav, .navbar, .menu, .site-header, .site-footer {
+  background-color: black !important;
+  border: none !important;
+}
+
+code, pre {
+  background-color: black;
+  color: #00FF00;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 0 0 5px #00FF00;
+  border: 1px solid #00FF00;
+  padding: 0.5em;
+}
+
+button, input, select, textarea {
+  background-color: black;
+  color: #00FF00;
+  border: 1px solid #00FF00;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #00FF00;
+  text-shadow: 0 0 5px #00FF00;
+}
