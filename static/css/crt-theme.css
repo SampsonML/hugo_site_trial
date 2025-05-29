@@ -232,39 +232,47 @@ body::after {
 
 
 # center profiles
-.profile-section {
+.profile-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
 }
 
 .profile-photo {
+  width: 160px;
+  height: auto;
   border-radius: 50%;
-  max-width: 160px;
   margin-bottom: 1rem;
+  box-shadow: 0 0 10px #66ff99;
 }
 
 .profile-name {
   font-size: 2rem;
-  font-family: 'Courier New', monospace;
-  color: #66ff99;
+  color: #9be7c4;
+  margin: 0 0 0.4rem;
+  font-family: 'Courier New', Courier, monospace;
   text-shadow: 0 0 3px #66ff99;
-  margin-bottom: 0.5rem;
 }
 
-.author-role {
-  margin-top: -0.5rem;
+.profile-role {
+  margin: 0.2rem 0;
   color: #9be7c4;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.profile-link {
+  color: #9be7c4;
+  text-decoration: underline;
 }
 
 .social-links {
   display: flex;
-  gap: 0.6rem;
   flex-wrap: wrap;
+  gap: 0.6rem;
   justify-content: center;
   margin-top: 1rem;
 }
