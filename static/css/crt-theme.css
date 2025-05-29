@@ -282,6 +282,26 @@ body::after {
   margin-top: 1rem;
 }
 
+.social-icon {
+  font-size: 1.4rem;
+  color: #66ff99;
+  padding: 0.4rem;
+  border: 1px solid #66ff99;
+  border-radius: 4px;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 0 5px #66ff99;
+}
+
+.social-icon:hover {
+  background-color: #003300;
+}
+
 
 
 
