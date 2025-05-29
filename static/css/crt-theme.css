@@ -87,6 +87,45 @@ a:hover {
   to { width: 13ch; } /* 12 characters + 1 space */
 }
 
+.typewriter-line {
+  display: inline-block;
+  position: relative;
+  font-family: 'Courier New', Courier, monospace !important;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.typewriter-text {
+  display: inline-block;
+  animation: typing-move 2.5s steps(13, end) forwards;
+}
+
+.moving-cursor {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  animation: moveCursor 2.5s steps(13, end) forwards, blink 1s steps(1) infinite;
+}
+
+/* Typing text width animation */
+@keyframes typing-move {
+  from { width: 0; }
+  to { width: 13ch; }
+}
+
+/* Move cursor horizontally along with typing */
+@keyframes moveCursor {
+  from { left: 0ch; }
+  to { left: 13ch; }
+}
+
+/* Blinking effect */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
 
 
 
