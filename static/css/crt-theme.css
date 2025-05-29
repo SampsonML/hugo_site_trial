@@ -277,6 +277,31 @@ body::after {
   transform: scale(1.05);
 }
 
+.led {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--crt-color);
+  background-color: transparent;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+body[data-theme="green"] .led[data-theme="green"],
+body[data-theme="orange"] .led[data-theme="orange"],
+body[data-theme="blue"] .led[data-theme="blue"] {
+  animation: ledPulse 2s infinite ease-in-out;
+}
+
+@keyframes ledPulse {
+  0%, 100% { box-shadow: 0 0 6px var(--crt-color); }
+  50% { box-shadow: 0 0 12px var(--crt-color), 0 0 18px var(--crt-color); }
+}
+
+
+
 
 
 
