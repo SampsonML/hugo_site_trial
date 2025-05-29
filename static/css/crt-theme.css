@@ -302,6 +302,42 @@ body::after {
   background-color: #003300;
 }
 
+/* Default green */
+body[data-theme="green"] {
+  --crt-color: #66ff99;
+  --crt-glow: 0 0 3px #66ff99;
+  --crt-bg: black;
+}
+
+/* Phosphor orange */
+body[data-theme="orange"] {
+  --crt-color: #ff9933;
+  --crt-glow: 0 0 3px #ff9933;
+  --crt-bg: black;
+}
+
+/* Cold blue */
+body[data-theme="blue"] {
+  --crt-color: #66ccff;
+  --crt-glow: 0 0 3px #66ccff;
+  --crt-bg: black;
+}
+
+/* Use theme variables globally */
+body {
+  background-color: var(--crt-bg) !important;
+  color: var(--crt-color) !important;
+  font-family: 'Courier New', Courier, monospace !important;
+  text-shadow: var(--crt-glow) !important;
+}
+a, a:visited {
+  color: var(--crt-color) !important;
+}
+a:hover {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+
 
 
 
