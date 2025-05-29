@@ -21,10 +21,13 @@ highlight_name: true
 
 ---
 <h2 class="typewriter">Matt Sampson&nbsp;<span class="cursor">▊</span></h2>
-<p style="margin-top: 0; color: #9be7c4;">
-  PhD candidate at <a href="https://web.astro.princeton.edu/people/matthew-sampson" style="color: #9be7c4; text-decoration: underline;">Princeton University</a>
-</p>
 
+<p style="margin: 0.2rem 0; color: #9be7c4;">
+  PhD candidate at 
+  <a href="https://web.astro.princeton.edu/people/matthew-sampson" style="color: #9be7c4; text-decoration: underline;">
+    Princeton University
+  </a>
+</p>
 
 <div class="social-links">
   <a href="mailto:matt.sampson@princeton.edu" class="download-cv">Email</a>
@@ -32,9 +35,9 @@ highlight_name: true
   <a href="https://scholar.google.com/citations?user=kc8P55cAAAAJ&hl=en&oi=sra" class="download-cv">Scholar</a>
   <a href="https://orcid.org/0000-0001-5748-5393" class="download-cv">ORCID</a>
   <a href="https://www.linkedin.com/in/matt-sampson-b56b8113b/" class="download-cv">LinkedIn</a>
-  <a href="https://twitter.com/Space_Boy_Matt" class="download-cv">X</a>
-  <a href="/uploads/AcademicCVSampsonMatt.pdf" class="download-cv" download>cv</a>
+  <a href="/uploads/AcademicCVSampsonMatt.pdf" class="download-cv" download>Download CV</a>
 </div>
+
 
 <h2 style="color: #9be7c4; margin: 0;">about me</h2>
 <p>
