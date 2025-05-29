@@ -258,14 +258,14 @@ body::after {
   margin-bottom: 0.4rem;
   font-family: 'Courier New', Courier, monospace;
   text-shadow: 0 0 3px #66ff99;
-  justify-content: center;
+  text-align: center;
 }
 
 .profile-role {
   margin: 0.2rem 0;
   color: #9be7c4;
   font-family: 'Courier New', Courier, monospace;
-  justify-content: center;
+  text-align: center;
 }
 
 .profile-link {
