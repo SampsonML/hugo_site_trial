@@ -1,16 +1,16 @@
 <div id="boot-screen">
-  <p class="boot-line" style="--delay: 0s;">&gt; Booting matt.sampson<span class="cursor">▊</span></p>
-  <p class="boot-line" style="--delay: 1.2s;">&gt; Initializing AI Stack<span class="cursor">▊</span></p>
+  <p class="boot-line" style="--delay: 0s;">&gt; booting system...<span class="cursor">▊</span></p>
+  <p class="boot-line" style="--delay: 1.2s;">&gt; loading user information...<span class="cursor">▊</span></p>
 </div>
 
 <script>
   document.body.classList.add("loading");
 
-  // Remove boot screen after everything finishes typing
   setTimeout(() => {
     const boot = document.getElementById("boot-screen");
-    if (boot) boot.remove(); // Removes it from the DOM completely
+    if (boot) boot.remove(); // full cleanup
     document.body.classList.remove("loading");
-  }, 3800); // Match this to total animation time (delay + duration)
+  }, 3800);
 </script>
+
 
