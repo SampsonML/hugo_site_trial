@@ -19,7 +19,7 @@ highlight_name: true
 
 ---
 <div class="profile-block">
-  <img src="/static/img/matt_p.npg" alt="Matt Sampson" class="profile-photo" />
+  <img src="/static/img/matt_p.png" alt="Matt Sampson" class="profile-photo" />
 
   <h2 class="profile-name">Matt Sampson</h2>
 
