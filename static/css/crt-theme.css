@@ -152,23 +152,21 @@ footer,
 
 .terminal-reveal {
   opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  animation: terminalTypeIn 2.8s steps(40, end) 3.8s forwards;
+  visibility: hidden;
+  animation: terminalTypeFadeIn 2.2s ease-out 3.8s forwards;
 }
 
-@keyframes terminalTypeIn {
+@keyframes terminalTypeFadeIn {
   0% {
     opacity: 0;
-    max-height: 0;
-  }
-  5% {
-    opacity: 1;
+    visibility: hidden;
   }
   100% {
-    max-height: 5000px;
+    opacity: 1;
+    visibility: visible;
   }
 }
+
 
 
 
