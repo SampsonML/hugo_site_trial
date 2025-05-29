@@ -157,6 +157,32 @@ body.loading {
   overflow: hidden;
 }
 
+# hide site when bootloader animation shows 
+/* Completely hide main content while boot screen is active */
+body.loading main,
+body.loading header,
+body.loading footer,
+body.loading .hero,
+body.loading .page-wrapper,
+body.loading .content,
+body.loading .profile-center {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+
+# slowly fade in
+/* Smooth fade-in when boot screen ends */
+main,
+header,
+footer,
+.hero,
+.page-wrapper,
+.content,
+.profile-center {
+  transition: opacity 0.6s ease;
+}
+
 
 
 
