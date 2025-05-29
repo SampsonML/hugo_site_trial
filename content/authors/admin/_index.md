@@ -18,9 +18,7 @@ superuser: true
 highlight_name: true
 
 ---
-<h2 class="typewriter-line">
-  <span class="typewriter-text">Matt Sampson</span><span class="moving-cursor">▊</span>
-</h2>
+<h2 style="color: #9be7c4; margin-top: 1rem;">matt sampson</h2>
 
 
 <p style="margin: 0.2rem 0; color: #9be7c4;">
