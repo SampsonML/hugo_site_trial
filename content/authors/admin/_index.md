@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 ---
-<h2 class="typewriter">Matt Sampson<span class="cursor">▊</span></h2>
+<h2 class="typewriter">Matt Sampson&nbsp;<span class="cursor">▊</span></h2>
 <p style="margin-top: 0; color: #9be7c4;">
   PhD candidate at <a href="https://web.astro.princeton.edu/people/matthew-sampson" style="color: #9be7c4; text-decoration: underline;">Princeton University</a>
 </p>
