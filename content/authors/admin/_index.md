@@ -77,7 +77,11 @@ skills:
         description: 'I enjoy teaching students of all ages and capabilities about mathematics/physics/CS whether through the university or in my own time'
 
 ---
-<h2 style="color: #9be7c4; margin-bottom: 0.5rem;">Matt Sampson</h2>
+<h2 style="color: #9be7c4; margin-bottom: 0.2rem;">Matt Sampson</h2>
+<p style="margin-top: 0; color: #9be7c4;">
+  PhD candidate at <a href="https://web.astro.princeton.edu/people/matthew-sampson" style="color: #9be7c4; text-decoration: underline;">Princeton University</a>
+</p>
+
 
 <div class="social-links">
   <a href="mailto:matt.sampson@princeton.edu" class="download-cv">Email</a>
