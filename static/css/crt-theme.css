@@ -132,7 +132,7 @@ a:hover {
   width: 100%;
   height: 100%;
   background: black;
-  color: #00FF00;
+  color: #ff9933; /* phosphor orange */
   font-family: 'Courier New', Courier, monospace;
   padding: 2rem;
   z-index: 9999;
@@ -149,6 +149,11 @@ a:hover {
     visibility: hidden;
   }
 }
+
+body.loading {
+  overflow: hidden;
+}
+
 
 
 
