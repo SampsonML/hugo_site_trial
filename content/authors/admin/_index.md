@@ -2,8 +2,6 @@
 # Display name
 # title: Matt Sampson
 
-# Name pronunciation (optional)
-# name_pronunciation: Matt Sampson
 
 # Full name (for SEO)
 first_name: Matthew Liam
@@ -20,7 +18,10 @@ superuser: true
 highlight_name: true
 
 ---
-<h2 class="typewriter">Matt Sampson&nbsp;<span class="cursor">▊</span></h2>
+<h2 class="typewriter-line">
+  <span class="typewriter-text">Matt Sampson</span><span class="moving-cursor">▊</span>
+</h2>
+
 
 <p style="margin: 0.2rem 0; color: #9be7c4;">
   PhD candidate at 
