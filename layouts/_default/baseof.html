@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 
-    {{ partial "custom_head.html" . }}
+    <!-- DIRECT CRT STYLESHEET LINK (no partial) -->
+    <link rel="stylesheet" href="{{ "css/crt-theme.css" | relURL }}">
   </head>
   <body>
     {{ block "main" . }}{{ end }}
   </body>
 </html>
+
