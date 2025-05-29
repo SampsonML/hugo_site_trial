@@ -2,6 +2,9 @@
 # Guide: https://docs.hugoblox.com/tutorial/
 # Documentation: https://docs.hugoblox.com/
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# add custom css file
+head:
+  custom_head: true
 
 # Custom CSS
 custom_css:
