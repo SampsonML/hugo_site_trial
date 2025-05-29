@@ -247,6 +247,36 @@ body::after {
   100% { transform: translate(0); opacity: 1; }
 }
 
+/* Theme Switcher Buttons */
+.theme-switcher {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10000;
+}
+
+.theme-switcher button {
+  background: transparent;
+  border: 2px solid var(--crt-color);
+  color: var(--crt-color);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: var(--crt-glow);
+  box-shadow: 0 0 4px var(--crt-color), 0 0 6px var(--crt-color);
+  transition: all 0.2s ease;
+}
+
+.theme-switcher button:hover {
+  background-color: var(--crt-hover);
+  box-shadow: 0 0 6px var(--crt-color), 0 0 10px var(--crt-color);
+  transform: scale(1.05);
+}
+
 
 
 
