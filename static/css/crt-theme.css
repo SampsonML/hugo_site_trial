@@ -243,10 +243,11 @@ body::after {
 }
 
 .profile-photo {
+  display: block;
+  margin: 0 auto 1rem;
   width: 160px;
-  height: auto;
   border-radius: 50%;
-  margin-bottom: 1rem;
+  justify-content: center;
   box-shadow: 0 0 10px #66ff99;
 }
 
@@ -257,17 +258,20 @@ body::after {
   margin-bottom: 0.4rem;
   font-family: 'Courier New', Courier, monospace;
   text-shadow: 0 0 3px #66ff99;
+  justify-content: center;
 }
 
 .profile-role {
   margin: 0.2rem 0;
   color: #9be7c4;
   font-family: 'Courier New', Courier, monospace;
+  justify-content: center;
 }
 
 .profile-link {
   color: #9be7c4;
   text-decoration: underline;
+  justify-content: center;
 }
 
 .social-links {
