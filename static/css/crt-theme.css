@@ -63,8 +63,8 @@ a:hover {
 
 /* Blinking cursor only for CV */
 .cursor {
-  display: inline-block;
   animation: blink 1s steps(1) infinite;
+  margin-left: 0.1ch;
 }
 
 @keyframes blink {
@@ -88,12 +88,13 @@ a:hover {
 }
 
 .typewriter-line {
-  display: inline-block;
+  display: inline-flex; /* was inline-block or flex */
   position: relative;
   font-family: 'Courier New', Courier, monospace !important;
-  overflow: hidden;
+  overflow: visible !important; /* key fix */
   white-space: nowrap;
 }
+
 
 .typewriter-text {
   display: inline-block;
@@ -104,7 +105,8 @@ a:hover {
   display: inline-block;
   position: absolute;
   left: 0;
-  animation: moveCursor 2.5s steps(13, end) forwards, blink 1s steps(1) infinite;
+  animation: moveCursor 2.2s steps(13, end) forwards, blink 1s steps(1) infinite;
+  margin-left: 0.1ch;
 }
 
 /* Typing text width animation */
