@@ -77,12 +77,7 @@ skills:
         description: 'I enjoy teaching students of all ages and capabilities about mathematics/physics/CS whether through the university or in my own time'
 
 ---
-<div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
-  <h2 style="color: #9be7c4; margin: 0;">Matt Sampson</h2>
-  <a href="/uploads/AcademicCVSampsonMatt.pdf" class="download-cv" download>
-    cv <span class="cursor">▊</span>
-  </a>
-</div>
+<h2 style="color: #9be7c4; margin-bottom: 0.5rem;">Matt Sampson</h2>
 
 <div class="social-links">
   <a href="mailto:matt.sampson@princeton.edu" class="download-cv">Email</a>
@@ -91,6 +86,7 @@ skills:
   <a href="https://orcid.org/0000-0001-5748-5393" class="download-cv">ORCID</a>
   <a href="https://www.linkedin.com/in/matt-sampson-b56b8113b/" class="download-cv">LinkedIn</a>
   <a href="https://twitter.com/Space_Boy_Matt" class="download-cv">X</a>
+  <a href="/uploads/AcademicCVSampsonMatt.pdf" class="cv" download>Download CV</a>
 </div>
 
 <h2 style="color: #9be7c4; margin: 0;">about me</h2>
