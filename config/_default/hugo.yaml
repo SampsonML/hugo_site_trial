@@ -9,11 +9,6 @@ title: Matt Sampson
 # Website URL
 baseURL: 'https://www.msampson.net/'
 
-# add my custom terminal css
-params:
-  custom_css:
-    - css/crt-theme.css
-
 ############################
 ## LANGUAGE
 ############################
