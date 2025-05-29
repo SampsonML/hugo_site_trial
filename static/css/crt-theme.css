@@ -1,47 +1,67 @@
-/* ========== CRT Terminal Theme ========== */
+/* ========== CRT Terminal Theme (Theme Switchable) ========== */
+
+/* Theme Variables */
+body[data-theme="green"] {
+  --crt-color: #66ff99;
+  --crt-glow: 0 0 3px #66ff99;
+  --crt-bg: black;
+  --crt-hover: rgba(102, 255, 153, 0.1);
+}
+
+body[data-theme="orange"] {
+  --crt-color: #ff9933;
+  --crt-glow: 0 0 3px #ff9933;
+  --crt-bg: black;
+  --crt-hover: rgba(255, 153, 51, 0.1);
+}
+
+body[data-theme="blue"] {
+  --crt-color: #66ccff;
+  --crt-glow: 0 0 3px #66ccff;
+  --crt-bg: black;
+  --crt-hover: rgba(102, 204, 255, 0.1);
+}
+
+/* Global Styles */
 html, body, main, section, div, header, footer, nav, article {
-  background-color: black !important;
-  color: #66ff99 !important;
+  background-color: var(--crt-bg) !important;
+  color: var(--crt-color) !important;
   font-family: 'Courier New', Courier, monospace !important;
-  text-shadow: 0 0 3px #66ff99 !important;
+  text-shadow: var(--crt-glow) !important;
 }
 
 a, a:visited {
-  color: #66ff99 !important;
+  color: var(--crt-color) !important;
   text-decoration: underline !important;
 }
 
 a:hover {
-  background-color: #003300 !important;
-}
-
-/* Biography/Profile color tweaks */
-.biography, .author-role, .author-content {
-  color: #9be7c4 !important;
+  background-color: var(--crt-hover) !important;
 }
 
 /* Download CV button */
 .download-cv {
-  border: 2px solid #99ffcc !important;
+  border: 2px solid var(--crt-color) !important;
   padding: 0.5em 1em !important;
   background-color: transparent !important;
-  color: #66ff99 !important;
+  color: var(--crt-color) !important;
   display: inline-block !important;
   font-family: 'Courier New', Courier, monospace !important;
   text-transform: uppercase;
-  text-shadow: 0 0 5px #66ff99;
+  text-shadow: var(--crt-glow);
   font-size: 14px !important;
   line-height: 1.2;
   text-align: center;
   margin-top: 2rem;
 }
 
-/* Social icons */
+/* Social buttons */
 .social-links {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.6rem;
-  margin-top: 0.4rem;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -50,7 +70,45 @@ a:hover {
   padding: 0.4em 0.8em !important;
 }
 
-/* ========== Boot Screen Styles ========== */
+/* Social icons */
+.social-icon {
+  font-size: 1.4rem;
+  color: var(--crt-color);
+  padding: 0.4rem;
+  border: 1px solid var(--crt-color);
+  border-radius: 4px;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 0 5px var(--crt-color);
+}
+
+.social-icon:hover {
+  background-color: var(--crt-hover);
+}
+
+/* Profile */
+.profile-photo {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 160px;
+  border-radius: 50%;
+  justify-content: center;
+  box-shadow: 0 0 10px var(--crt-color);
+}
+
+.profile-name, .profile-role, .profile-link {
+  color: var(--crt-color);
+  text-shadow: var(--crt-glow);
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Boot Screen */
 #boot-screen {
   position: fixed;
   top: 0;
@@ -58,7 +116,7 @@ a:hover {
   width: 100%;
   height: 100%;
   background: black;
-  color: #ff9933;
+  color: var(--crt-color);
   font-family: 'Courier New', Courier, monospace;
   padding: 2rem;
   z-index: 99999;
@@ -84,7 +142,7 @@ a:hover {
   to { width: 30ch; }
 }
 
-/* Shared blinking cursor */
+/* Cursor blink */
 .cursor {
   display: inline-block;
   animation: blink 1s steps(1) infinite;
@@ -96,7 +154,7 @@ a:hover {
   50% { opacity: 0; }
 }
 
-/* Hide site during boot */
+/* Hide main content during boot */
 body.loading main,
 body.loading header,
 body.loading footer,
@@ -106,16 +164,11 @@ body.loading .page-wrapper {
   pointer-events: none !important;
 }
 
-/* Smooth fade-in for main content */
-main,
-header,
-footer,
-.hero,
-.page-wrapper {
+main, header, footer, .hero, .page-wrapper {
   transition: opacity 0.6s ease;
 }
 
-/* ========== Name Typing After Boot ========== */
+/* Typewriter effect */
 .typewriter-line {
   display: inline-flex;
   font-family: 'Courier New', Courier, monospace;
@@ -150,6 +203,7 @@ footer,
   to { left: 13ch; }
 }
 
+/* Terminal reveal */
 .terminal-reveal {
   opacity: 0;
   visibility: hidden;
@@ -159,17 +213,11 @@ footer,
 }
 
 @keyframes terminalTypeFadeIn {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-  }
-  100% {
-    opacity: 1;
-    visibility: visible;
-  }
+  0% { opacity: 0; visibility: hidden; }
+  100% { opacity: 1; visibility: visible; }
 }
 
-# adding terminal scanlines
+/* Scanline overlay */
 body::after {
   content: "";
   position: fixed;
@@ -188,153 +236,15 @@ body::after {
   );
 }
 
-.terminal-reveal-type {
-  overflow: hidden;
-  white-space: nowrap;
-  display: inline-block;
-  width: 0;
-  animation: typeFullPage 1.6s steps(80, end) 2.2s forwards;
-}
-
-@keyframes typeFullPage {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-# add glitch flicker
+/* Glitch flicker */
 @keyframes glitch-flicker {
-  0% {
-    transform: translate(0);
-    opacity: 1;
-  }
-  10% {
-    transform: translate(-1px, 1px);
-  }
-  20% {
-    transform: translate(1px, -2px);
-  }
-  30% {
-    transform: translate(-3px, 2px);
-    opacity: 0.8;
-  }
-  40% {
-    transform: translate(2px, -1px);
-  }
-  50% {
-    transform: translate(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(0);
-    opacity: 1;
-  }
-}
-
-
-# center profiles
-.profile-center {
-  display: flex;
-  flex-direction: column;
-  # align-items: center;
-  # justify-content: center;
-  # text-align: center;
-  margin: 2rem auto;
-  max-width: 600px;
-}
-
-.profile-photo {
-  display: block;
-  margin: 0 auto 1rem;
-  width: 160px;
-  border-radius: 50%;
-  justify-content: center;
-  box-shadow: 0 0 10px #66ff99;
-}
-
-.profile-name {
-  font-size: 2rem;
-  color: #9be7c4;
-  margin-top: 0.5rem;
-  margin-bottom: 0.4rem;
-  font-family: 'Courier New', Courier, monospace;
-  text-shadow: 0 0 3px #66ff99;
-  text-align: center;
-}
-
-.profile-role {
-  margin: 0.2rem 0;
-  color: #9be7c4;
-  font-family: 'Courier New', Courier, monospace;
-  text-align: center;
-}
-
-.profile-link {
-  color: #9be7c4;
-  text-decoration: underline;
-  justify-content: center;
-}
-
-.social-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.6rem;
-  margin-top: 1rem;
-}
-
-.social-icon {
-  font-size: 1.4rem;
-  color: #66ff99;
-  padding: 0.4rem;
-  border: 1px solid #66ff99;
-  border-radius: 4px;
-  text-align: center;
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  box-shadow: 0 0 5px #66ff99;
-}
-
-.social-icon:hover {
-  background-color: #003300;
-}
-
-/* Default green */
-body[data-theme="green"] {
-  --crt-color: #66ff99;
-  --crt-glow: 0 0 3px #66ff99;
-  --crt-bg: black;
-}
-
-/* Phosphor orange */
-body[data-theme="orange"] {
-  --crt-color: #ff9933;
-  --crt-glow: 0 0 3px #ff9933;
-  --crt-bg: black;
-}
-
-/* Cold blue */
-body[data-theme="blue"] {
-  --crt-color: #66ccff;
-  --crt-glow: 0 0 3px #66ccff;
-  --crt-bg: black;
-}
-
-/* Use theme variables globally */
-body {
-  background-color: var(--crt-bg) !important;
-  color: var(--crt-color) !important;
-  font-family: 'Courier New', Courier, monospace !important;
-  text-shadow: var(--crt-glow) !important;
-}
-a, a:visited {
-  color: var(--crt-color) !important;
-}
-a:hover {
-  background-color: rgba(0, 255, 0, 0.1);
+  0%   { transform: translate(0); opacity: 1; }
+  10%  { transform: translate(-1px, 1px); }
+  20%  { transform: translate(1px, -2px); }
+  30%  { transform: translate(-3px, 2px); opacity: 0.8; }
+  40%  { transform: translate(2px, -1px); }
+  50%  { transform: translate(0); opacity: 1; }
+  100% { transform: translate(0); opacity: 1; }
 }
 
 
