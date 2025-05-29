@@ -15,9 +15,9 @@ sections:
       username: admin
       text: ""
       # Show a call-to-action button under your biography? (optional)
-      button:
-        text: 'download cv <span class="cursor">▊</span>'
-        url: uploads/AcademicCVSampsonMatt.pdf
+      # button:
+      #  text: cv
+      #  url: uploads/AcademicCVSampsonMatt.pdf
     design:
       css_class: dark
       background:
@@ -30,6 +30,18 @@ sections:
           size: cover
           position: center
           parallax: true
+
+  - block: markdown
+  content:
+    text: >
+      <a href="/uploads/AcademicCVSampsonMatt.pdf" class="download-cv" download>
+        cv <span class="cursor">▊</span>
+      </a>
+  design:
+    css_class: dark
+    background:
+      color: black
+
 
   - block: markdown
     content:
