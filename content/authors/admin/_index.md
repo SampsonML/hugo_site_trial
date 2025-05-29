@@ -18,7 +18,7 @@ superuser: true
 highlight_name: true
 
 ---
-<img src="/img/matt_p.png" alt="Matt Sampson" class="profile-photo" />
+<img src="/img/matt_pp.png" alt="Matt Sampson" class="profile-photo" />
 <h2 class="profile-name">Matt Sampson</h2>
 <p class="profile-role">
   PhD candidate at
