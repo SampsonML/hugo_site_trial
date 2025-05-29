@@ -1,44 +1,48 @@
-/* CRT Terminal Theme */
-body {
-  background-color: black;
-  color: #00FF00;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 16px;
-  text-shadow: 0 0 5px #00FF00;
+/* CRT Terminal Theme - Stronger selectors and !important overrides */
+body, html {
+  background-color: black !important;
+  color: #00FF00 !important;
+  font-family: 'Courier New', Courier, monospace !important;
+  font-size: 16px !important;
+  text-shadow: 0 0 5px #00FF00 !important;
 }
 
-a {
-  color: #00FF00;
-  text-decoration: underline;
+a, a:visited {
+  color: #00FF00 !important;
+  text-decoration: underline !important;
 }
 
 a:hover {
-  color: #00FF00;
-  background-color: #003300;
+  color: #00FF00 !important;
+  background-color: #003300 !important;
 }
 
-header, footer, nav, .navbar, .menu, .site-header, .site-footer {
+header, footer, nav, .navbar, .menu, .site-header, .site-footer, .hero, .home-section, .section {
   background-color: black !important;
   border: none !important;
+  color: #00FF00 !important;
 }
 
 code, pre {
-  background-color: black;
-  color: #00FF00;
-  font-family: 'Courier New', Courier, monospace;
-  text-shadow: 0 0 5px #00FF00;
-  border: 1px solid #00FF00;
-  padding: 0.5em;
+  background-color: black !important;
+  color: #00FF00 !important;
+  font-family: 'Courier New', Courier, monospace !important;
+  text-shadow: 0 0 5px #00FF00 !important;
+  border: 1px solid #00FF00 !important;
+  padding: 0.5em !important;
 }
 
 button, input, select, textarea {
-  background-color: black;
-  color: #00FF00;
-  border: 1px solid #00FF00;
-  font-family: 'Courier New', Courier, monospace;
+  background-color: black !important;
+  color: #00FF00 !important;
+  border: 1px solid #00FF00 !important;
+  font-family: 'Courier New', Courier, monospace !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #00FF00;
-  text-shadow: 0 0 5px #00FF00;
+  color: #00FF00 !important;
+  text-shadow: 0 0 5px #00FF00 !important;
 }
+
+.section-title, .hero-title, .hero-subtitle, .t
+
