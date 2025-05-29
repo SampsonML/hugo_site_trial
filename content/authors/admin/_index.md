@@ -77,9 +77,21 @@ skills:
         description: 'I enjoy teaching students of all ages and capabilities about mathematics/physics/CS whether through the university or in my own time'
 
 ---
-<h2 style="color: #9be7c4;">about me</h2>
+<div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+  <h2 style="color: #9be7c4; margin: 0;">Matt Sampson</h2>
+  <a href="/uploads/AcademicCVSampsonMatt.pdf" class="download-cv" download>
+    cv <span class="cursor">▊</span>
+  </a>
+</div>
 
+<p>
 I am currently at Princeton University studying ways to advance science through the use of machine learning with a particular focus on modelling dynamical systems, representation learning, and world models. Previously I was at the Australian National University where I performed numerical experiments and helped develop a code to simulate cosmic ray propagation through a dynamically evolving turbulent plasma. I have also worked as a data scientist/computational statistician in fields of information geometry and biology.
+</p>
+
+
+# <h2 style="color: #9be7c4;">about me</h2>
+
+
 
 
 
