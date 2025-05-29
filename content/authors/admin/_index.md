@@ -29,20 +29,20 @@ highlight_name: true
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
-profiles:
-  - icon: at-symbol
-    url: 'mailto:matt.sampson@princeton.edu'
-    label: E-mail Me
-  - icon: brands/github
-    url: https://github.com/SampsonML
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=kc8P55cAAAAJ&hl=en&oi=sra
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0001-5748-5393
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/matt-sampson-b56b8113b/
-  - icon: brands/x
-    url: https://twitter.com/Space_Boy_Matt
+# profiles:
+#  - icon: at-symbol
+#    url: 'mailto:matt.sampson@princeton.edu'
+#    label: E-mail Me
+#  - icon: brands/github
+#    url: https://github.com/SampsonML
+#  - icon: academicons/google-scholar
+#    url: https://scholar.google.com/citations?user=kc8P55cAAAAJ&hl=en&oi=sra
+#  - icon: academicons/orcid
+#    url: https://orcid.org/0000-0001-5748-5393
+#  - icon: brands/linkedin
+#    url: https://www.linkedin.com/in/matt-sampson-b56b8113b/
+#  - icon: brands/x
+#    url: https://twitter.com/Space_Boy_Matt
 
 
 
