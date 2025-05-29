@@ -1,4 +1,4 @@
-/* CRT Terminal Theme */
+/* ========== CRT Terminal Theme ========== */
 html, body, main, section, div, header, footer, nav, article {
   background-color: black !important;
   color: #66ff99 !important;
@@ -15,12 +15,12 @@ a:hover {
   background-color: #003300 !important;
 }
 
-
-/* Match biography/profile text color to "about me" heading */
+/* Biography/Profile color tweaks */
 .biography, .author-role, .author-content {
   color: #9be7c4 !important;
 }
 
+/* Download CV button */
 .download-cv {
   border: 2px solid #99ffcc !important;
   padding: 0.5em 1em !important;
@@ -36,97 +36,21 @@ a:hover {
   margin-top: 2rem;
 }
 
-.cursor {
-  display: inline-block;
-  animation: blink 1s steps(1) infinite;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-/* Social buttons layout */
+/* Social icons */
 .social-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
-  margin-top: 0.4rem; /* was 1rem — reduce vertical space */
+  margin-top: 0.4rem;
   margin-bottom: 0.5rem;
 }
 
-/* Smaller style for social buttons */
 .social-links a.download-cv {
   font-size: 13px !important;
   padding: 0.4em 0.8em !important;
 }
 
-/* Blinking cursor only for CV */
-.cursor {
-  animation: blink 1s steps(1) infinite;
-  margin-left: 0.1ch;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-/* Looping typewriter animation */
-.typewriter {
-  overflow: hidden;
-  white-space: nowrap;
-  display: inline-block;
-  width: 0;
-  animation: typing 2.2s steps(13, end) 1 forwards;
-  position: relative;
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 13ch; } /* 12 characters + 1 space */
-}
-
-.typewriter-line {
-  display: inline-flex;
-  font-family: 'Courier New', Courier, monospace;
-  white-space: nowrap;
-  position: relative;
-  overflow: visible; /* Don't clip the moving cursor */
-}
-
-.typewriter-text {
-  overflow: hidden;
-  display: inline-block;
-  width: 0;
-  animation: typing-move 2.2s steps(13, end) forwards;
-  animation-delay: 3.8s; /* Wait for boot screen to end */
-}
-
-.moving-cursor {
-  position: absolute;
-  left: 0;
-  animation:
-    moveCursor 2.2s steps(13, end) 3.8s forwards,
-    blink 1s steps(1) infinite;
-}
-
-@keyframes typing-move {
-  from { width: 0; }
-  to { width: 13ch; }  /* Adjust based on name length */
-}
-
-@keyframes moveCursor {
-  from { left: 0ch; }
-  to { left: 13ch; }
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-# startup boot screen
+/* ========== Boot Screen Styles ========== */
 #boot-screen {
   position: fixed;
   top: 0;
@@ -160,6 +84,7 @@ a:hover {
   to { width: 30ch; }
 }
 
+/* Shared blinking cursor */
 .cursor {
   display: inline-block;
   animation: blink 1s steps(1) infinite;
@@ -171,7 +96,7 @@ a:hover {
   50% { opacity: 0; }
 }
 
-/* Hide main content during boot */
+/* Hide site during boot */
 body.loading main,
 body.loading header,
 body.loading footer,
@@ -181,13 +106,48 @@ body.loading .page-wrapper {
   pointer-events: none !important;
 }
 
-/* Smooth fade-in after boot */
+/* Smooth fade-in for main content */
 main,
 header,
 footer,
 .hero,
 .page-wrapper {
   transition: opacity 0.6s ease;
+}
+
+/* ========== Name Typing After Boot ========== */
+.typewriter-line {
+  display: inline-flex;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: nowrap;
+  position: relative;
+  overflow: visible;
+}
+
+.typewriter-text {
+  overflow: hidden;
+  display: inline-block;
+  width: 0;
+  animation: typing-move 2.2s steps(13, end) forwards;
+  animation-delay: 3.8s;
+  animation-fill-mode: forwards;
+}
+
+.moving-cursor {
+  position: absolute;
+  left: 0;
+  animation: moveCursor 2.2s steps(13, end) 3.8s forwards, blink 1s steps(1) infinite;
+  margin-left: 0.1ch;
+}
+
+@keyframes typing-move {
+  from { width: 0; }
+  to { width: 13ch; }
+}
+
+@keyframes moveCursor {
+  from { left: 0ch; }
+  to { left: 13ch; }
 }
 
 
