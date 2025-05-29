@@ -36,7 +36,7 @@ highlight_name: true
   <a href="https://scholar.google.com/citations?user=kc8P55cAAAAJ&hl=en&oi=sra" class="download-cv">Scholar</a>
   <a href="https://orcid.org/0000-0001-5748-5393" class="download-cv">ORCID</a>
   <a href="https://www.linkedin.com/in/matt-sampson-b56b8113b/" class="download-cv">LinkedIn</a>
-  <a href="/uploads/AcademicCVSampsonMatt.pdf" class="download-cv" download>Download CV</a>
+  <a href="/uploads/AcademicCVSampsonMatt.pdf" class="download-cv" download> cv </a>
 </div>
 
 
