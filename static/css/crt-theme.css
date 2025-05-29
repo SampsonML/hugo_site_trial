@@ -232,7 +232,7 @@ body::after {
 
 
 # center profiles
-.profile-block {
+.profile-center {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -253,7 +253,8 @@ body::after {
 .profile-name {
   font-size: 2rem;
   color: #9be7c4;
-  margin: 0 0 0.4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.4rem;
   font-family: 'Courier New', Courier, monospace;
   text-shadow: 0 0 3px #66ff99;
 }
@@ -272,10 +273,11 @@ body::after {
 .social-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
   justify-content: center;
+  gap: 0.6rem;
   margin-top: 1rem;
 }
+
 
 
 
