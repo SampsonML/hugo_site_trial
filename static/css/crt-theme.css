@@ -15,18 +15,13 @@ a:hover {
   background-color: #003300 !important;
 }
 
-/* CV download link */
-a[href*="cv"], a[download], .btn, button {
-  border: 2px solid #00FF00 !important;
-  padding: 0.5em 1em !important;
-  display: inline-block !important;
-  background-color: transparent !important;
-  text-shadow: 0 0 5px #00FF00 !important;
-  text-transform: uppercase;
+
+/* Match biography/profile text color to "about me" heading */
+.biography, .author-role, .author-content {
+  color: #9be7c4 !important;
 }
 
-/* Style for large download icon buttons */
-a[href*="cv"], a[download], .btn, .button {
+.download-cv {
   border: 2px solid #00FF00 !important;
   padding: 0.5em 1em !important;
   background-color: transparent !important;
@@ -37,36 +32,19 @@ a[href*="cv"], a[download], .btn, .button {
   text-shadow: 0 0 5px #00FF00;
   font-size: 14px !important;
   line-height: 1.2;
-  vertical-align: middle;
   text-align: center;
+  margin-top: 2rem;
 }
 
-/* Reduce icon size inside the button */
-a[href*="cv"] svg,
-a[download] svg,
-a[href*="cv"] i,
-a[download] i {
-  width: 1em !important;
-  height: 1em !important;
-  vertical-align: middle;
-  margin-right: 0.3em;
-}
-
-/* add download blinking cursor */
 .cursor {
   display: inline-block;
   animation: blink 1s steps(1) infinite;
 }
 
 @keyframes blink {
-  0%   { opacity: 1; }
-  50%  { opacity: 0; }
-  100% { opacity: 1; }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
-/* Match biography/profile text color to "about me" heading */
-.biography, .author-role, .author-content {
-  color: #9be7c4 !important;
-}
 
 
