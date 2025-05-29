@@ -36,6 +36,16 @@ highlight_name: true
   <a href="/uploads/AcademicCVSampsonMatt.pdf" class="download-cv" download>CV</a>
 </div>
 
+<div class="social-links">
+  <a href="mailto:matt.sampson@princeton.edu" class="social-icon"><i class="fas fa-envelope"></i></a>
+  <a href="https://github.com/SampsonML" class="social-icon"><i class="fab fa-github"></i></a>
+  <a href="https://scholar.google.com/citations?user=kc8P55cAAAAJ" class="social-icon"><i class="fas fa-graduation-cap"></i></a>
+  <a href="https://orcid.org/0000-0001-5748-5393" class="social-icon"><i class="fab fa-orcid"></i></a>
+  <a href="https://www.linkedin.com/in/matt-sampson-b56b8113b/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+  <a href="/uploads/AcademicCVSampsonMatt.pdf" class="social-icon" download><i class="fas fa-file-alt"></i></a>
+</div>
+
+
 
 
 <h2 style="color: #9be7c4; margin-top: 2rem;">about me</h2>
