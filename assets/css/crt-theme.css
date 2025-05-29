@@ -1,15 +1,9 @@
-/* Global CRT Terminal Theme Override */
-* {
+/* CRT Terminal Theme */
+html, body, main, section, div, header, footer, nav, article {
   background-color: black !important;
   color: #00FF00 !important;
   font-family: 'Courier New', Courier, monospace !important;
   text-shadow: 0 0 5px #00FF00 !important;
-  box-shadow: none !important;
-  border-color: #00FF00 !important;
-}
-
-body, html {
-  font-size: 16px !important;
 }
 
 a, a:visited {
@@ -21,31 +15,13 @@ a:hover {
   background-color: #003300 !important;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  color: #00FF00 !important;
-  text-shadow: 0 0 5px #00FF00 !important;
-}
-
-/* Buttons and links like CV download */
-a[href*="cv"], a[download], a.btn, button {
-  background-color: transparent !important;
-  color: #00FF00 !important;
+/* CV download link */
+a[href*="cv"], a[download], .btn, button {
   border: 2px solid #00FF00 !important;
   padding: 0.5em 1em !important;
   display: inline-block !important;
-  font-family: 'Courier New', Courier, monospace !important;
-  text-transform: uppercase !important;
+  background-color: transparent !important;
   text-shadow: 0 0 5px #00FF00 !important;
+  text-transform: uppercase;
 }
 
-a[href*="cv"]:hover, a[download]:hover, a.btn:hover, button:hover {
-  background-color: #003300 !important;
-}
-
-/* Code blocks */
-code, pre {
-  background-color: black !important;
-  border: 1px solid #00FF00 !important;
-  padding: 0.5em !important;
-}
