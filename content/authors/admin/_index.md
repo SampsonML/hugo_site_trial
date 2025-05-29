@@ -90,8 +90,6 @@ I am currently at Princeton University studying ways to advance science through 
 </p>
 
 
-# <h2 style="color: #9be7c4;">about me</h2>
-
 
 
 
