@@ -9,6 +9,24 @@ design:
   spacing: "6rem"
 
 sections:
+- block: markdown
+  content:
+    text: >
+      <div id="boot-screen">
+        <p>> Booting matt.sampson...</p>
+        <p>> Initializing AI Stack <span class="cursor">▊</span></p>
+      </div>
+      <script>
+        document.body.classList.add("loading");
+        setTimeout(() => {
+          const boot = document.getElementById("boot-screen");
+          if (boot) boot.style.display = "none";
+          document.body.classList.remove("loading");
+        }, 3800);
+      </script>
+
+
+
   - block: resume-biography-3
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
