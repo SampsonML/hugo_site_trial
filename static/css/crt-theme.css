@@ -74,7 +74,7 @@ a:hover {
   display: inline-block;
   white-space: nowrap;
   width: 0;
-  animation: typeBoot 0.7s steps(25, end) forwards;
+  animation: typeBoot 0.8s steps(25, end) forwards;
   animation-delay: var(--delay);
   animation-fill-mode: forwards;
 }
