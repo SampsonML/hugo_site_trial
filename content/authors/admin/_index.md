@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Matt Sampson
+# title: Matt Sampson
 
 # Name pronunciation (optional)
 # name_pronunciation: Matt Sampson
@@ -20,11 +20,11 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: PhD candidate
+# role: PhD candidate
 
 # Organizations/Affiliations to display in Biography blox
-organizations:
-  - name: Princeton University
+# organizations:
+#  - name: Princeton University
     url: https://web.astro.princeton.edu/people/matthew-sampson
 
 # Social network links
