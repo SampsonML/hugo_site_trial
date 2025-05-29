@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ .Title }}</title>
 
-    <!-- DIRECT CRT STYLESHEET LINK (no partial) -->
-    <link rel="stylesheet" href="{{ "css/crt-theme.css" | relURL }}">
+    <!-- Load your custom CRT CSS -->
+    <link rel="stylesheet" href="/css/crt-theme.css" />
   </head>
-  <body>
-    {{ block "main" . }}{{ end }}
+
+  <body class="{{ .Type | default "page" }}">
+    <header>
+      <!-- Optional: your site header -->
+    </header>
+
+    <main id="main-content" role="main">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+      <!-- Optional: your site footer -->
+    </footer>
+
+    <!-- Inject the boot screen animation partial -->
     {{ partial "body-end.html" . }}
   </body>
 </html>
+
 
