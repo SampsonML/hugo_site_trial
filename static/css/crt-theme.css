@@ -277,34 +277,28 @@ body::after {
   transform: scale(1.05);
 }
 
+
 .led {
-  position: relative;
   display: inline-block;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   margin-right: 0.5rem;
   border-radius: 50%;
-  background-color: red;
-  border: 1px solid red;
+  border: 1px solid var(--crt-color);
+  background-color: var(--crt-color);
   box-shadow: none;
   transition: all 0.3s ease;
 }
 
-/* Active LED gets a soft red pulse */
 body[data-theme="green"] .led[data-theme="green"],
 body[data-theme="orange"] .led[data-theme="orange"],
 body[data-theme="blue"] .led[data-theme="blue"] {
-  box-shadow: 0 0 6px red, 0 0 10px red;
-  animation: redPulse 1.6s ease-in-out infinite;
+  animation: ledPulse 2s infinite ease-in-out;
 }
 
-@keyframes redPulse {
-  0%, 100% {
-    box-shadow: 0 0 5px red, 0 0 8px red;
-  }
-  50% {
-    box-shadow: 0 0 10px red, 0 0 16px red;
-  }
+@keyframes ledPulse {
+  0%, 100% { box-shadow: 0 0 6px var(--crt-color); }
+  50% { box-shadow: 0 0 12px var(--crt-color), 0 0 18px var(--crt-color); }
 }
 
 
