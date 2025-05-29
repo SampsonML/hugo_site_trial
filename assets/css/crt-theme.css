@@ -1,3 +1,11 @@
+* {
+  background-color: black !important;
+  color: #00FF00 !important;
+  font-family: 'Courier New', Courier, monospace !important;
+  text-shadow: 0 0 5px #00FF00 !important;
+}
+
+
 /* CRT Terminal Theme - Stronger selectors and !important overrides */
 body, html {
   background-color: black !important;
@@ -63,3 +71,14 @@ a.btn:hover, .button:hover, button:hover {
   background-color: #003300 !important;
   color: #00FF00 !important;
 }
+
+a[href*="cv"], a[download] {
+  border: 2px solid #00FF00 !important;
+  padding: 0.5em 1em !important;
+  display: inline-block;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #00FF00;
+  font-family: 'Courier New', Courier, monospace !important;
+  background: transparent !important;
+}
+
