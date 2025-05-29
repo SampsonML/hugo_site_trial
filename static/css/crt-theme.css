@@ -153,7 +153,7 @@ footer,
 .terminal-reveal {
   opacity: 0;
   visibility: hidden;
-  animation: terminalTypeFadeIn 2.2s ease-out 2.2s forwards;
+  animation: terminalTypeFadeIn 1.0s ease-out 2.2s forwards;
 }
 
 @keyframes terminalTypeFadeIn {
