@@ -18,24 +18,28 @@ superuser: true
 highlight_name: true
 
 ---
-<h2 style="color: #9be7c4; margin-top: 1rem;">matt sampson</h2>
+<div class="profile-block">
+  <img src="/img/matt_p.png" alt="Matt Sampson" class="profile-photo" />
 
+  <h2 class="profile-name">matt sampson</h2>
 
-<p style="margin: 0.2rem 0; color: #9be7c4;">
-  PhD candidate at 
-  <a href="https://web.astro.princeton.edu/people/matthew-sampson" style="color: #9be7c4; text-decoration: underline;">
-    Princeton University
-  </a>
-</p>
+  <p class="profile-role">
+    PhD candidate at
+    <a href="https://web.astro.princeton.edu/people/matthew-sampson" class="profile-link">
+      Princeton University
+    </a>
+  </p>
 
-<div class="social-links">
-  <a href="mailto:matt.sampson@princeton.edu" class="download-cv">Email</a>
-  <a href="https://github.com/SampsonML" class="download-cv">GitHub</a>
-  <a href="https://scholar.google.com/citations?user=kc8P55cAAAAJ&hl=en&oi=sra" class="download-cv">Scholar</a>
-  <a href="https://orcid.org/0000-0001-5748-5393" class="download-cv">ORCID</a>
-  <a href="https://www.linkedin.com/in/matt-sampson-b56b8113b/" class="download-cv">LinkedIn</a>
-  <a href="/uploads/AcademicCVSampsonMatt.pdf" class="download-cv" download> cv </a>
+  <div class="social-links">
+    <a href="mailto:matt.sampson@princeton.edu" class="download-cv">Email</a>
+    <a href="https://github.com/SampsonML" class="download-cv">GitHub</a>
+    <a href="https://scholar.google.com/citations?user=kc8P55cAAAAJ&hl=en&oi=sra" class="download-cv">Scholar</a>
+    <a href="https://orcid.org/0000-0001-5748-5393" class="download-cv">ORCID</a>
+    <a href="https://www.linkedin.com/in/matt-sampson-b56b8113b/" class="download-cv">LinkedIn</a>
+    <a href="/uploads/AcademicCVSampsonMatt.pdf" class="download-cv" download>CV</a>
+  </div>
 </div>
+
 
 
 <h2 style="color: #9be7c4; margin-top: 2rem;">about me</h2>
