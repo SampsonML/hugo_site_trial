@@ -46,5 +46,31 @@ a:hover {
   50% { opacity: 0; }
 }
 
+/* Social buttons layout */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+/* Smaller style for social buttons */
+.social-links a.download-cv {
+  font-size: 13px !important;
+  padding: 0.4em 0.8em !important;
+}
+
+/* Blinking cursor only for CV */
+.cursor {
+  display: inline-block;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
 
 
