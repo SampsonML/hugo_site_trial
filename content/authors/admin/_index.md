@@ -82,6 +82,7 @@ skills:
   <a href="/uploads/AcademicCVSampsonMatt.pdf" class="download-cv" download>
     cv <span class="cursor">▊</span>
   </a>
+  <h2 style="color: #9be7c4; margin: 0;">about me</h2>
 </div>
 
 <p>
