@@ -71,28 +71,28 @@ a:hover {
   50% { opacity: 0; }
 }
 
-/* Typewriter animation for name */
+/* Looping typewriter animation */
 .typewriter {
   overflow: hidden;
   white-space: nowrap;
-  width: 0;
-  animation: typing 2.5s steps(12, end) forwards;
-}
-
-.cursor {
   display: inline-block;
-  animation: blink 1s steps(1) infinite;
+  width: 13ch;
+  animation: typing 3.5s steps(13, end) 1s forwards, resetTypewriter 5s linear infinite;
+  position: relative;
 }
 
 @keyframes typing {
   from { width: 0; }
-  to { width: 13ch; } /* "Matt Sampson" is 12 chars + 1 space/padding */
+  to { width: 13ch; }
 }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+@keyframes resetTypewriter {
+  0% { visibility: visible; }
+  80% { visibility: visible; }
+  81% { visibility: hidden; width: 0; }
+  100% { visibility: visible; width: 0; }
 }
+
 
 
 
