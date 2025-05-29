@@ -152,11 +152,12 @@ a:hover {
   width: 0;
   animation: typeBoot 1.2s steps(30, end) forwards;
   animation-delay: var(--delay);
+  animation-fill-mode: forwards;
 }
 
 @keyframes typeBoot {
   from { width: 0; }
-  to { width: 30ch; } /* Adjust to match your text length */
+  to { width: 30ch; }
 }
 
 .cursor {
@@ -170,28 +171,25 @@ a:hover {
   50% { opacity: 0; }
 }
 
-/* Hide site during boot */
+/* Hide main content during boot */
 body.loading main,
 body.loading header,
 body.loading footer,
 body.loading .hero,
-body.loading .page-wrapper,
-body.loading .content,
-body.loading .profile-center {
+body.loading .page-wrapper {
   opacity: 0 !important;
   pointer-events: none !important;
 }
 
-/* Fade in site after boot */
+/* Smooth fade-in after boot */
 main,
 header,
 footer,
 .hero,
-.page-wrapper,
-.content,
-.profile-center {
+.page-wrapper {
   transition: opacity 0.6s ease;
 }
+
 
 
 
