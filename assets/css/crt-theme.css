@@ -1,18 +1,15 @@
+/* Global CRT Terminal Theme Override */
 * {
   background-color: black !important;
   color: #00FF00 !important;
   font-family: 'Courier New', Courier, monospace !important;
   text-shadow: 0 0 5px #00FF00 !important;
+  box-shadow: none !important;
+  border-color: #00FF00 !important;
 }
 
-
-/* CRT Terminal Theme - Stronger selectors and !important overrides */
 body, html {
-  background-color: black !important;
-  color: #00FF00 !important;
-  font-family: 'Courier New', Courier, monospace !important;
   font-size: 16px !important;
-  text-shadow: 0 0 5px #00FF00 !important;
 }
 
 a, a:visited {
@@ -21,64 +18,34 @@ a, a:visited {
 }
 
 a:hover {
-  color: #00FF00 !important;
   background-color: #003300 !important;
 }
 
-header, footer, nav, .navbar, .menu, .site-header, .site-footer, .hero, .home-section, .section {
-  background-color: black !important;
-  border: none !important;
-  color: #00FF00 !important;
-}
-
-code, pre {
-  background-color: black !important;
-  color: #00FF00 !important;
-  font-family: 'Courier New', Courier, monospace !important;
-  text-shadow: 0 0 5px #00FF00 !important;
-  border: 1px solid #00FF00 !important;
-  padding: 0.5em !important;
-}
-
-button, input, select, textarea {
-  background-color: black !important;
-  color: #00FF00 !important;
-  border: 1px solid #00FF00 !important;
-  font-family: 'Courier New', Courier, monospace !important;
-}
-
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
   color: #00FF00 !important;
   text-shadow: 0 0 5px #00FF00 !important;
 }
 
-.section-title, .hero-title, .hero-subtitle, .t
-
-/* Retro CRT style for the CV download button */
-a.btn, .button, button {
+/* Buttons and links like CV download */
+a[href*="cv"], a[download], a.btn, button {
   background-color: transparent !important;
   color: #00FF00 !important;
   border: 2px solid #00FF00 !important;
   padding: 0.5em 1em !important;
+  display: inline-block !important;
   font-family: 'Courier New', Courier, monospace !important;
-  text-transform: uppercase;
-  text-shadow: 0 0 5px #00FF00;
-  display: inline-block;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  text-transform: uppercase !important;
+  text-shadow: 0 0 5px #00FF00 !important;
 }
 
-a.btn:hover, .button:hover, button:hover {
+a[href*="cv"]:hover, a[download]:hover, a.btn:hover, button:hover {
   background-color: #003300 !important;
-  color: #00FF00 !important;
 }
 
-a[href*="cv"], a[download] {
-  border: 2px solid #00FF00 !important;
-  padding: 0.5em 1em !important;
-  display: inline-block;
-  text-transform: uppercase;
-  text-shadow: 0 0 5px #00FF00;
-  font-family: 'Courier New', Courier, monospace !important;
-  background: transparent !important;
+/* Code blocks */
+code, pre {
+  background-color: black !important;
+  border: 1px solid #00FF00 !important;
+  padding: 0.5em !important;
 }
-
