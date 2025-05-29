@@ -33,18 +33,6 @@ sections:
 
   - block: markdown
     content:
-      text: >
-        <a href="/uploads/AcademicCVSampsonMatt.pdf" class="download-cv" download>
-          cv <span class="cursor">▊</span>
-        </a>
-    design:
-      css_class: dark
-      background:
-        color: black
-
-
-  - block: markdown
-    content:
       text: ""
     design:
       css_class: dark
