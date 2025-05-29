@@ -127,19 +127,21 @@ a:hover {
 # startup boot screen
 #boot-screen {
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: black;
-  color: #ff9933; /* phosphor orange */
+  color: #ff9933;
   font-family: 'Courier New', Courier, monospace;
   padding: 2rem;
-  z-index: 9999;
+  z-index: 99999; /* very high to cover everything */
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 1.2rem;
   animation: bootFadeOut 0.8s ease 3s forwards;
+  pointer-events: all;
 }
 
 @keyframes bootFadeOut {
