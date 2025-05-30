@@ -370,11 +370,11 @@ body[data-theme="blue"] .led[data-theme="blue"] {
 /* Animations */
 .diagnostics-fill {
   animation: bootFill1 0.6s ease-out forwards;
-  animation-delay: 0.6s;
+  animation-delay: 1.2s;
 }
 .upload-fill {
   animation: bootFill2 0.6s ease-out forwards;
-  animation-delay: 0.6s;
+  animation-delay: 1.2s;
 }
 @keyframes bootFill1 {
   from { width: 0; }
