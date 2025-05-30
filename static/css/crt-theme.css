@@ -247,7 +247,7 @@ body::after {
   100% { transform: translate(0); opacity: 1; }
 }
 
-/* Theme Switcher Buttons 
+/* Theme Switcher Buttons */
 .theme-switcher {
   position: fixed;
   top: 1rem;
@@ -255,19 +255,6 @@ body::after {
   display: flex;
   gap: 0.5rem;
   z-index: 10000;
-}
-*/
-.theme-switcher {
-  position: relative;            /* Not fixed */
-  display: flex;
-  justify-content: flex-end;     /* Align buttons to right within container */
-  gap: 0.5rem;
-  margin: 1rem;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 0.4rem 0.6rem;
-  border: 1px solid var(--crt-color);
-  border-radius: 4px;
-  box-shadow: 0 0 4px var(--crt-color);
 }
 
 .theme-switcher button {
