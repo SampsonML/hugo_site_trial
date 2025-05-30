@@ -272,7 +272,9 @@ body::after {
   width: fit-content;
 }
 
-
+body {
+  position: relative;
+}
 
 .theme-switcher button {
   background: transparent;
