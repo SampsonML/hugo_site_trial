@@ -371,7 +371,7 @@ body[data-theme="blue"] .led[data-theme="blue"] {
 
 @keyframes bootFill {
   from { width: 0; }
-  to { width: 78%; }
+  to { width: 100%; }
 }
 
 
