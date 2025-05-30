@@ -249,7 +249,7 @@ body::after {
 
 /* Theme Switcher Buttons */
 .theme-switcher {
-  position: fixed;
+  /*position: fixed;*/
   top: 1rem;
   right: 1rem;
   display: flex;
