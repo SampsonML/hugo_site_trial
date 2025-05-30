@@ -406,7 +406,7 @@ body[data-theme="blue"] .led[data-theme="blue"] {
   animation: fadeIn 0.6s ease-out forwards;
   animation-delay: 2.3s;
   color: var(--crt-color);
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 /* Fade-in utility */
