@@ -1,25 +1,26 @@
 <div id="boot-screen">
   <p class="boot-line" style="--delay: 0s;">&gt; booting system...</p>
-  <!--<p class="boot-line" style="--delay: 0.8s;">&gt; loading user information...<span class="cursor">▊</span></p>-->
-  <!-- Container to delay the rest -->
-  <div class="boot-delayed" style="animation-delay: 1.2s;">
 
-    <!-- First progress bar -->
-    <div class="boot-progress-container">
-      <span class="boot-label">&gt; neural scan </span>
-      <div class="boot-progress-bar">
-        <div class="boot-progress-fill diagnostics-fill"></div>
-      </div>
+  <!-- First progress bar: Neural scan -->
+  <div id="diagnostics-container" class="boot-progress-container">
+    <span class="boot-label">&gt; neural scan</span>
+    <div class="boot-progress-bar">
+      <div class="boot-progress-fill diagnostics-fill"></div>
     </div>
-
-    <!-- Second progress bar (Memory Upload) -->
-    <div class="boot-progress-container">
-      <span class="boot-label">&gt; memory upload </span>
-      <div class="boot-progress-bar">
-        <div class="boot-progress-fill upload-fill"></div>
-      </div>
-    </div>
+    <span class="boot-done" style="animation-delay: 2.4s;">✓</span>
   </div>
+
+  <!-- Second progress bar: Memory upload -->
+  <div id="upload-container" class="boot-progress-container">
+    <span class="boot-label">&gt; memory upload</span>
+    <div class="boot-progress-bar">
+      <div class="boot-progress-fill upload-fill"></div>
+    </div>
+    <span class="boot-done" style="animation-delay: 4.2s;">✓</span>
+  </div>
+
+  <!-- Final completion flag -->
+  <p class="boot-complete-flag">&gt; boot sequence complete</p>
 </div>
 
 <script>
@@ -27,9 +28,9 @@
 
   setTimeout(() => {
     const boot = document.getElementById("boot-screen");
-    if (boot) boot.remove(); // full cleanup
+    if (boot) boot.remove();
     document.body.classList.remove("loading");
-  }, 2600);
+  }, 5200); // match timing of last animation
 </script>
 
 <!-- Theme Switcher with LED indicators -->
@@ -55,5 +56,6 @@ window.addEventListener('DOMContentLoaded', () => {
   setTheme(savedTheme);
 });
 </script>
+
 
 
