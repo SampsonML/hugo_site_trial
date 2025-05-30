@@ -337,11 +337,11 @@ body[data-theme="blue"] .led[data-theme="blue"] {
 }
 
 #diagnostics-container {
-  animation-delay: 1.2s;
+  animation-delay: 0.8s;
 }
 
 #upload-container {
-  animation-delay: 3.0s;
+  animation-delay: 1.5s;
 }
 
 .boot-label {
@@ -370,11 +370,11 @@ body[data-theme="blue"] .led[data-theme="blue"] {
 /* Animations */
 .diagnostics-fill {
   animation: bootFill1 0.7s ease-out forwards;
-  animation-delay: 1.2s;
+  animation-delay: 0.8s;
 }
 .upload-fill {
   animation: bootFill2 0.7s ease-out forwards;
-  animation-delay: 1.9s;
+  animation-delay: 1.5s;
 }
 @keyframes bootFill1 {
   from { width: 0; }
@@ -404,7 +404,7 @@ body[data-theme="blue"] .led[data-theme="blue"] {
   margin-top: 1rem;
   opacity: 0;
   animation: fadeIn 0.6s ease-out forwards;
-  animation-delay: 2.9s;
+  animation-delay: 2.3s;
   color: var(--crt-color);
   font-weight: bold;
 }
