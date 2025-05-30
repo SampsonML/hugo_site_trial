@@ -369,12 +369,12 @@ body[data-theme="blue"] .led[data-theme="blue"] {
 
 /* Animations */
 .diagnostics-fill {
-  animation: bootFill1 1.2s ease-out forwards;
-  animation-delay: 1.2s;
+  animation: bootFill1 0.6s ease-out forwards;
+  animation-delay: 0.6s;
 }
 .upload-fill {
-  animation: bootFill2 1.2s ease-out forwards;
-  animation-delay: 3.0s;
+  animation: bootFill2 0.6s ease-out forwards;
+  animation-delay: 1.4s;
 }
 @keyframes bootFill1 {
   from { width: 0; }
@@ -393,7 +393,7 @@ body[data-theme="blue"] .led[data-theme="blue"] {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
   opacity: 0;
-  animation: doneAppear 0.3s ease-out forwards;
+  animation: doneAppear 0.2s ease-out forwards;
 }
 @keyframes doneAppear {
   to { opacity: 1; }
@@ -403,8 +403,8 @@ body[data-theme="blue"] .led[data-theme="blue"] {
 .boot-complete-flag {
   margin-top: 1rem;
   opacity: 0;
-  animation: fadeIn 0.6s ease-out forwards;
-  animation-delay: 4.5s;
+  animation: fadeIn 0.2s ease-out forwards;
+  animation-delay: 2.4s;
   color: var(--crt-color);
   font-weight: bold;
 }
@@ -414,6 +414,16 @@ body[data-theme="blue"] .led[data-theme="blue"] {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+/* Boot Screen Typing Speed */
+.boot-line {
+  animation: typeBoot 0.4s steps(25, end) forwards; /* Was 0.8s */
+}
+
+
+
+
+
 
 
 
