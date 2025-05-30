@@ -1,12 +1,15 @@
 <div id="boot-screen">
   <p class="boot-line" style="--delay: 0s;">&gt; booting system...</p>
   <!--<p class="boot-line" style="--delay: 0.8s;">&gt; loading user information...<span class="cursor">▊</span></p>-->
+  <!-- Container to delay the rest -->
+  <div class="boot-delayed" style="animation-delay: 1.2s;">
 
-  <!-- Progress bar container -->
-  <div class="boot-progress-container">
-    <span class="boot-label">&gt; neural scan...</span>
-    <div class="boot-progress-bar">
-      <div class="boot-progress-fill"></div>
+    <!-- Progress bar: delayed -->
+    <div class="boot-progress-container">
+      <span class="boot-label">&gt; neural scan </span>
+      <div class="boot-progress-bar">
+        <div class="boot-progress-fill"></div>
+      </div>
     </div>
   </div>
 </div>
