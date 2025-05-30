@@ -1,6 +1,14 @@
 <div id="boot-screen">
   <p class="boot-line" style="--delay: 0s;">&gt; booting system...</p>
-  <p class="boot-line" style="--delay: 1.2s;">&gt; loading user information...<span class="cursor">▊</span></p>
+  <p class="boot-line" style="--delay: 0.8s;">&gt; loading user information...<span class="cursor">▊</span></p>
+
+  <!-- Progress bar container -->
+  <div class="boot-progress-container">
+    <span class="boot-label">&gt; Memory Diagnostics</span>
+    <div class="boot-progress-bar">
+      <div class="boot-progress-fill"></div>
+    </div>
+  </div>
 </div>
 
 <script>
