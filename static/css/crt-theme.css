@@ -247,17 +247,8 @@ body::after {
   100% { transform: translate(0); opacity: 1; }
 }
 
-/* Theme Switcher Buttons
-.theme-switcher {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  display: flex;
-  gap: 0.5rem;
-  z-index: 10000;
-}
- */
 
+/* ---------- theme buttons ---------- */
 .theme-switcher {
   position: absolute;
   top: 1rem;
@@ -334,89 +325,94 @@ body[data-theme="blue"] .led[data-theme="blue"] {
   }
 }
 
+
+/* ---------- boot progress bar ---------- */
 .boot-progress-container {
   margin-top: 2rem;
   max-width: 300px;
   font-family: 'Courier New', Courier, monospace;
-  color: #ff9933;
+  color: var(--crt-color);
+  opacity: 0;
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+#diagnostics-container {
+  animation-delay: 1.2s;
+}
+
+#upload-container {
+  animation-delay: 3.0s;
 }
 
 .boot-label {
   display: block;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 
 .boot-progress-bar {
-  width: 100%;
-  height: 1rem;
-  border: 1px solid #ff9933;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 0 4px #ff9933, 0 0 8px #ff9933 inset;
+  height: 12px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid var(--crt-color);
+  box-shadow: 0 0 4px var(--crt-color);
   overflow: hidden;
 }
 
-/*
 .boot-progress-fill {
   height: 100%;
   width: 0;
-  background: #ff9933;
+  background: var(--crt-color);
   box-shadow:
-    inset 0 0 12px #ff9933,
-    0 0 10px #ff9933,
-    0 0 20px #ff9933;
-  animation: bootFill 1.0s ease-out forwards;
-  animation-delay: 0.6s;
-}
-*/
-
-@keyframes bootFill {
-  from { width: 0; }
-  to { width: 100%; }
+    inset 0 0 12px var(--crt-color),
+    0 0 10px var(--crt-color),
+    0 0 20px var(--crt-color);
 }
 
-.boot-delayed {
-  opacity: 0;
-  animation: fadeIn 0.4s ease-out forwards;
-  animation-delay: 0.9s;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-/* Shared progress fill base */
-.boot-progress-fill {
-  height: 100%;
-  width: 0;
-  background: #ff9933;
-  box-shadow:
-    inset 0 0 12px #ff9933,
-    0 0 10px #ff9933,
-    0 0 20px #ff9933;
-}
-
-/* First progress animation (Memory Diagnostics) */
+/* Animations */
 .diagnostics-fill {
   animation: bootFill1 1.2s ease-out forwards;
-  animation-delay: 1.6s;
+  animation-delay: 1.2s;
 }
-
+.upload-fill {
+  animation: bootFill2 1.2s ease-out forwards;
+  animation-delay: 3.0s;
+}
 @keyframes bootFill1 {
   from { width: 0; }
   to { width: 100%; }
 }
-
-/* Second progress animation (Memory Upload) */
-.upload-fill {
-  animation: bootFill2 1.2s ease-out forwards;
-  animation-delay: 3.2s; /* After first bar completes */
-}
-
 @keyframes bootFill2 {
   from { width: 0; }
   to { width: 100%; }
+}
+
+/* "✓ done" flag */
+.boot-done {
+  display: inline-block;
+  margin-left: 0.8rem;
+  color: #00ff66;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  opacity: 0;
+  animation: doneAppear 0.3s ease-out forwards;
+}
+@keyframes doneAppear {
+  to { opacity: 1; }
+}
+
+/* Final boot flag */
+.boot-complete-flag {
+  margin-top: 1rem;
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out forwards;
+  animation-delay: 4.5s;
+  color: var(--crt-color);
+  font-weight: bold;
+}
+
+/* Fade-in utility */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 
