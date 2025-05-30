@@ -266,7 +266,7 @@ body::after {
   gap: 0.5rem;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 0.4rem 0.6rem;
-  border: 1px solid var(--crt-color);
+  border:  none;/*1px solid var(--crt-color);*/
   border-radius: 4px;
   box-shadow: 0 0 4px var(--crt-color);
   width: fit-content;
