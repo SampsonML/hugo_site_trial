@@ -404,7 +404,7 @@ body[data-theme="blue"] .led[data-theme="blue"] {
   margin-top: 1rem;
   opacity: 0;
   animation: fadeIn 0.2s ease-out forwards;
-  animation-delay: 1.2s;
+  animation-delay: 1.6s;
   color: var(--crt-color);
   font-weight: bold;
 }
