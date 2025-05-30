@@ -374,8 +374,8 @@ body[data-theme="blue"] .led[data-theme="blue"] {
 
 .boot-delayed {
   opacity: 0;
-  animation: fadeIn 0.2s ease-out forwards;
-  animation-delay: 0.5s;
+  animation: fadeIn 0.4s ease-out forwards;
+  animation-delay: 0.9s;
 }
 
 @keyframes fadeIn {
