@@ -360,8 +360,8 @@ body[data-theme="blue"] .led[data-theme="blue"] {
   width: 0;
   background: #ff9933;
   box-shadow: 0 0 6px #ff9933, 0 0 15px #ff9933, inset 0 0 5px #ff9933;
-  animation: bootFill 1.2s ease-out forwards;
-  animation-delay: 1.2s;
+  animation: bootFill 0.8s ease-out forwards;
+  animation-delay: 0.4s;
 }
 
 
