@@ -428,9 +428,10 @@ body[data-theme="blue"] .led[data-theme="blue"] {
   50% { opacity: 0.2; }
 }
 
-body.powered-off *:not(#crt-overlay):not(#power-on-btn) {
+body.powered-off *:not(#crt-overlay):not(#power-on-btn):not(.crt-dot) {
   display: none !important;
 }
+
 
 body.powered-off #power-on-btn {
   z-index: 100001;
