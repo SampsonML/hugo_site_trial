@@ -1,3 +1,4 @@
+<!-- Boot Screen -->
 <div id="boot-screen">
   <p class="boot-line" style="--delay: 0s;">&gt; booting system...</p>
 
@@ -9,7 +10,7 @@
     </div>
   </div>
 
-  <!-- Second progress bar (Memory Upload) -->
+  <!-- Second progress bar -->
   <div class="boot-progress-container" style="animation-delay: 1.5s;">
     <span class="boot-label">&gt; loading data </span>
     <div class="boot-progress-bar">
@@ -17,21 +18,16 @@
     </div>
   </div>
 
-  <!-- Final completion flag -->
+  <!-- Final message -->
   <p class="boot-complete-flag">&gt; boot sequence complete</p>
 </div>
 
-<script>
-  document.body.classList.add("loading");
+<!-- Shutdown Overlay with Flicker Dot -->
+<div id="crt-overlay" class="crt-poweroff-overlay">
+  <div class="crt-dot"></div>
+</div>
 
-  setTimeout(() => {
-    const boot = document.getElementById("boot-screen");
-    if (boot) boot.remove();
-    document.body.classList.remove("loading");
-  }, 2900); // match timing of last animation
-</script>
-
-<!-- Theme Switcher with LED indicators -->
+<!-- Theme Switcher + Power Buttons -->
 <div class="theme-switcher">
   <button onclick="setTheme('green')">
     <span class="led" data-theme="green"></span> IBM Green
@@ -43,39 +39,49 @@
     <span class="led" data-theme="blue"></span> ADM Blue
   </button>
 
-  <!-- Power Buttons below theme buttons -->
+  <!-- Power Controls -->
   <button id="power-off-btn" class="power-btn">shutdown</button>
-  <button id="power-on-btn" class="power-btn"> Reboot </button>
-  
+  <button id="power-on-btn" class="power-btn">reboot</button>
 </div>
 
-<!-- CRT Poweroff Overlay -->
-<div id="crt-overlay" class="crt-poweroff-overlay"></div>
-
+<!-- Scripts -->
 <script>
-function setTheme(theme) {
-  document.body.setAttribute('data-theme', theme);
-  localStorage.setItem('crt-theme', theme);
-}
-window.addEventListener('DOMContentLoaded', () => {
-  const savedTheme = localStorage.getItem('crt-theme') || 'orange';
-  setTheme(savedTheme);
-});
+  // Boot sequence complete
+  document.body.classList.add("loading");
+  setTimeout(() => {
+    const boot = document.getElementById("boot-screen");
+    if (boot) boot.remove();
+    document.body.classList.remove("loading");
+  }, 2900);
 </script>
 
-<!-- Power Button Logic -->
 <script>
+  // Theme logic
+  function setTheme(theme) {
+    document.body.setAttribute('data-theme', theme);
+    localStorage.setItem('crt-theme', theme);
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('crt-theme') || 'orange';
+    setTheme(savedTheme);
+  });
+</script>
+
+<script>
+  // Power buttons
   const overlay = document.getElementById('crt-overlay');
 
   document.getElementById('power-off-btn').addEventListener('click', () => {
-    overlay.style.opacity = '1';
-    overlay.classList.add('crt-collapse');
+    overlay.classList.add('active', 'crt-collapse');
+    document.body.classList.add('powered-off');
   });
 
   document.getElementById('power-on-btn').addEventListener('click', () => {
     location.reload();
   });
 </script>
+
 
 
 
