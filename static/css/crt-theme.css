@@ -504,10 +504,10 @@ body.powered-off #crt-overlay {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: var(--crt-color);
   box-shadow:
-    0 0 6px rgba(255, 255, 255, 0.4),
-    0 0 12px rgba(255, 255, 255, 0.2);
+    0 0 6px var(--crt-color),
+    0 0 12px var(--crt-color);
   animation: dot-flicker 1.2s infinite;
 }
 
