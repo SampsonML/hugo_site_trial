@@ -33,9 +33,9 @@
 
 <!-- Theme Switcher + Power Buttons -->
 <div class="theme-switcher" id="theme-ui">
-  <button onclick="setTheme('green')"> IBM Green </button>
-  <button onclick="setTheme('orange')"> VT320 Amber </button>
-  <button onclick="setTheme('blue')"> ADM Blue </button>
+  <button data-theme='green' onclick="setTheme('green')"> IBM Green </button>
+  <button data-theme='orange' onclick="setTheme('orange')"> VT320 Amber </button>
+  <button data-theme='blue' onclick="setTheme('blue')"> ADM Blue </button>
   <button id="power-off-btn" class="power-btn">shutdown</button>
 </div>
 
@@ -54,20 +54,14 @@
     document.body.setAttribute('data-theme', theme);
     localStorage.setItem('crt-theme', theme);
 
-    // Highlight the active theme button
     document.querySelectorAll('.theme-switcher button').forEach(btn => {
       btn.classList.remove('active');
-      if (btn.textContent.toLowerCase().includes(theme)) {
+      if (btn.getAttribute('data-theme') === theme) {
         btn.classList.add('active');
       }
     });
   }
   
-  //function setTheme(theme) {
-  //  document.body.setAttribute('data-theme', theme);
-  //  localStorage.setItem('crt-theme', theme);
-  //}
-
   window.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('crt-theme') || 'orange';
     setTheme(savedTheme);
