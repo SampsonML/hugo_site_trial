@@ -5,21 +5,21 @@
 /* Theme Variables */
 body[data-theme="green"] {
   --crt-color: #66ff99;
-  --crt-glow: 0 0 3px #66ff99;
+  --crt-glow: 0 0 5px #66ff99;
   --crt-bg: black;
   --crt-hover: rgba(102, 255, 153, 0.1);
 }
 
 body[data-theme="orange"] {
   --crt-color: #ff9933;
-  --crt-glow: 0 0 3px #ff9933;
+  --crt-glow: 0 0 5px #ff9933;
   --crt-bg: black;
   --crt-hover: rgba(255, 153, 51, 0.1);
 }
 
 body[data-theme="blue"] {
   --crt-color: #66ccff;
-  --crt-glow: 0 0 3px #66ccff;
+  --crt-glow: 0 0 5px #66ccff;
   --crt-bg: black;
   --crt-hover: rgba(102, 204, 255, 0.1);
 }
@@ -39,6 +39,7 @@ a, a:visited {
 
 a:hover {
   background-color: var(--crt-hover) !important;
+  box-shadow: 0 0 10px var(--crt-color), 0 0 20px var(--crt-color);
 }
 
 /* ------------------------ */
