@@ -391,19 +391,62 @@ body[data-theme="blue"] .theme-switcher button[data-theme="blue"] {
 /* ------------------------------- */
 /* ------ poweroff shutdown ------ */
 /* ------------------------------- */
+/* Inherit the current theme variables inside the shutdown overlay */
 .crt-poweroff-overlay {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
-  background: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 999999;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease;
+  --crt-color: inherit;
+  --crt-glow: inherit;
+  --crt-hover: inherit;
+  color: var(--crt-color);
+}
+
+/* Ensure shutdown overlay reflects the active theme */
+body[data-theme="green"] .crt-poweroff-overlay {
+  --crt-color: #66ff99;
+  --crt-glow: 0 0 3px #66ff99;
+  --crt-hover: rgba(102, 255, 153, 0.1);
+}
+
+body[data-theme="orange"] .crt-poweroff-overlay {
+  --crt-color: #ff9933;
+  --crt-glow: 0 0 3px #ff9933;
+  --crt-hover: rgba(255, 153, 51, 0.1);
+}
+
+body[data-theme="blue"] .crt-poweroff-overlay {
+  --crt-color: #66ccff;
+  --crt-glow: 0 0 3px #66ccff;
+  --crt-hover: rgba(102, 204, 255, 0.1);
+}
+
+/* Centered Reboot Button Styled Like Theme Buttons */
+#power-on-btn {
+  background-color: transparent;
+  border: 2px solid var(--crt-color);
+  color: var(--crt-color);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: var(--crt-glow);
+  box-shadow:
+    0 0 6px var(--crt-color),
+    0 0 12px var(--crt-color),
+    0 0 18px var(--crt-color),
+    0 0 24px var(--crt-color);
+  transition: all 0.2s ease;
+  margin-bottom: 20px;
+  transform: scale(1.06);
+}
+
+#power-on-btn:hover {
+  background-color: var(--crt-hover);
+  box-shadow:
+    0 0 8px var(--crt-color),
+    0 0 14px var(--crt-color),
+    0 0 20px var(--crt-color),
+    0 0 28px var(--crt-color);
+  transform: scale(1.08);
 }
 
 
@@ -454,34 +497,7 @@ body.powered-off #power-on-btn:hover {
   color: black;
 }
 
-#power-on-btn {
-  background-color: transparent;
-  border: 2px solid var(--crt-color);
-  color: var(--crt-color);
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.8rem;
-  padding: 0.4rem 0.8rem;
-  cursor: pointer;
-  text-transform: uppercase;
-  text-shadow: var(--crt-glow);
-  box-shadow:
-    0 0 6px var(--crt-color),
-    0 0 12px var(--crt-color),
-    0 0 18px var(--crt-color),
-    0 0 24px var(--crt-color);
-  transition: all 0.2s ease;
-  margin-bottom: 20px; /* spacing above dot */
-  transform: scale(1.06);
-}
-#power-on-btn:hover {
-  background-color: var(--crt-hover);
-  box-shadow:
-    0 0 8px var(--crt-color),
-    0 0 14px var(--crt-color),
-    0 0 20px var(--crt-color),
-    0 0 28px var(--crt-color);
-  transform: scale(1.08);
-}
+
 
 
 
