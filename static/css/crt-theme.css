@@ -517,9 +517,10 @@ body.powered-off #crt-overlay {
 }
 
 /* Optional: hide the rest of the content on shutdown */
-body.powered-off *:not(#crt-overlay) {
+body.powered-off *:not(#crt-overlay):not(#power-on-btn) {
   display: none !important;
 }
+
 
 
 
