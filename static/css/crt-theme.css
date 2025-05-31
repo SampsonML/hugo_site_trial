@@ -521,6 +521,15 @@ body.powered-off *:not(#crt-overlay):not(#power-on-btn) {
   display: none !important;
 }
 
+body.powered-off #power-on-btn {
+  z-index: 100001;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  box-shadow: 0 0 8px var(--crt-color), 0 0 12px var(--crt-color);
+}
+
+
 
 
 
