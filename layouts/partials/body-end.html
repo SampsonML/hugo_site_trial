@@ -45,14 +45,19 @@
     document.body.setAttribute('data-theme', theme);
     localStorage.setItem('crt-theme', theme);
 
+    const themeColors = {
+      green: '#66ff99',
+      orange: '#ff9933',
+      blue: '#66ccff'
+    };
+    const crtColor = themeColors[theme];
+
     document.querySelectorAll('.theme-switcher button').forEach(btn => {
       btn.classList.remove('active');
       btn.style.removeProperty('box-shadow');
 
       if (btn.dataset.theme === theme) {
         btn.classList.add('active');
-
-        const crtColor = getComputedStyle(document.body).getPropertyValue('--crt-color').trim();
         btn.style.boxShadow = `
           inset 0 0 10px ${crtColor},
           0 0 8px ${crtColor},
