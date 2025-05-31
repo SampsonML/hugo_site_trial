@@ -511,7 +511,7 @@ body.powered-off .crt-poweroff-overlay {
   50% { opacity: 0.2; }
 }
 
-body.powered-off *:not(#crt-overlay):not(#power-on-btn):not(.crt-dot):not(.crt-line) {
+body.powered-off *:not(#crt-overlay):not(#power-on-btn):not(.crt-dot):not(.crt-line):not(.crt-line-dot-wrapper) {
   display: none !important;
 }
 
