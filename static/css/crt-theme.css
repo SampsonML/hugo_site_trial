@@ -273,14 +273,19 @@ body::after {
   transition: all 0.2s ease;
 }
 
-/* Glow only on active theme button */
+/* glow only on active theme button */
 body[data-theme="green"] .theme-switcher button[data-theme="green"],
 body[data-theme="orange"] .theme-switcher button[data-theme="orange"],
 body[data-theme="blue"] .theme-switcher button[data-theme="blue"] {
-  background-color: rgba(255, 255, 255, 0.05); /* subtle glow base */
-  box-shadow: 0 0 6px var(--crt-color), 0 0 10px var(--crt-color), 0 0 14px var(--crt-color);
-  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.08); /* slightly brighter base glow */
+  box-shadow:
+    0 0 6px var(--crt-color),
+    0 0 12px var(--crt-color),
+    0 0 18px var(--crt-color),
+    0 0 24px var(--crt-color);
+  transform: scale(1.06);
 }
+
 
 .theme-switcher button:hover {
   background-color: var(--crt-hover);
