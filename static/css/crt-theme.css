@@ -468,7 +468,7 @@ body.powered-off .crt-poweroff-overlay {
 /* Wrapper aligns dot and line together */
 .crt-line-dot-wrapper {
   position: relative;
-  width: 120px;
+  width: 100%;
   height: 12px; /* matches dot height */
   display: flex;
   align-items: center;
@@ -504,8 +504,6 @@ body.powered-off .crt-poweroff-overlay {
   z-index: 2;
 }
 
-
-
 @keyframes dot-flicker {
   0%, 100% { opacity: 0.8; }
   50% { opacity: 0.2; }
@@ -514,7 +512,6 @@ body.powered-off .crt-poweroff-overlay {
 body.powered-off *:not(#crt-overlay):not(#power-on-btn):not(.crt-dot):not(.crt-line):not(.crt-line-dot-wrapper) {
   display: none !important;
 }
-
 
 body.powered-off #power-on-btn {
   z-index: 100001;
