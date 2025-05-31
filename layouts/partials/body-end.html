@@ -22,13 +22,14 @@
   <p class="boot-complete-flag">&gt; boot sequence complete</p>
 </div>
 
-<!-- Shutdown Overlay with Flicker Dot -->
+<!-- Shutdown Overlay with Flicker Dot and Reboot -->
 <div id="crt-overlay" class="crt-poweroff-overlay">
   <div class="crt-dot"></div>
+  <button id="power-on-btn" class="power-btn reboot-only">reboot</button>
 </div>
 
 <!-- Theme Switcher + Power Buttons -->
-<div class="theme-switcher">
+<div class="theme-switcher" id="theme-ui">
   <button onclick="setTheme('green')">
     <span class="led" data-theme="green"></span> IBM Green
   </button>
@@ -41,7 +42,6 @@
 
   <!-- Power Controls -->
   <button id="power-off-btn" class="power-btn">shutdown</button>
-  <button id="power-on-btn" class="power-btn">reboot</button>
 </div>
 
 <!-- Scripts -->
@@ -71,9 +71,11 @@
 <script>
   // Power buttons
   const overlay = document.getElementById('crt-overlay');
+  const ui = document.getElementById('theme-ui');
 
   document.getElementById('power-off-btn').addEventListener('click', () => {
     overlay.classList.add('active', 'crt-collapse');
+    if (ui) ui.style.display = 'none';
     document.body.classList.add('powered-off');
   });
 
