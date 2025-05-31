@@ -69,18 +69,24 @@
       shutdownBtn.addEventListener('click', () => {
         if (ui) ui.style.display = 'none';
 
-        // Collapse the page
         if (siteWrapper) {
-          siteWrapper.classList.add('crt-collapse');
-        }
+          siteWrapper.classList.add('glitch-flicker');
 
-        // After collapse animation ends (match duration in CSS), show dot + reboot
-        setTimeout(() => {
-          if (overlay) overlay.classList.add('active');
-          document.body.classList.add('powered-off');
-        }, 1100); // match with @keyframes crtCollapse duration
+          // After glitch flicker, start wipe animation
+          setTimeout(() => {
+            siteWrapper.classList.remove('glitch-flicker');
+            siteWrapper.classList.add('crt-wipe');
+          }, 400); // duration of glitch
+
+          // After full wipe, show dot + reboot
+          setTimeout(() => {
+            if (overlay) overlay.classList.add('active');
+            document.body.classList.add('powered-off');
+          }, 1600); // 400ms + 1200ms
+        }
       });
     }
+
 
     if (rebootBtn) {
       rebootBtn.addEventListener('click', () => {
