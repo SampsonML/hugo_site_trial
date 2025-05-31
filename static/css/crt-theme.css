@@ -61,6 +61,11 @@ a:hover {
   margin-top: 2rem;
 }
 
+.download-cv:hover {
+  box-shadow: 0 0 10px var(--crt-color), 0 0 20px var(--crt-color);
+  background-color: var(--crt-hover);
+}
+
 /* Social Buttons & Icons */
 .social-links {
   display: flex;
@@ -94,6 +99,7 @@ a:hover {
 
 .social-icon:hover {
   background-color: var(--crt-hover);
+  box-shadow: 0 0 10px var(--crt-color), 0 0 20px var(--crt-color);
 }
 
 /* Profile */
@@ -295,7 +301,7 @@ body[data-theme="blue"] .theme-switcher button[data-theme="blue"] {
 
 .theme-switcher button:hover {
   background-color: var(--crt-hover);
-  box-shadow: 0 0 4px var(--crt-color), 0 0 8px var(--crt-color);
+  box-shadow: 0 0 10px var(--crt-color), 0 0 20px var(--crt-color), 0 0 30px var(--crt-color);
 }
 
 /* --------------------------------------- */
