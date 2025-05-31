@@ -500,6 +500,20 @@ body.powered-off .crt-poweroff-overlay {
   z-index: 1;
 }
 
+.crt-line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, var(--crt-color) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.3;
+}
+
 /* Dot layered above line, flickering */
 .crt-dot {
   width: 12px;
