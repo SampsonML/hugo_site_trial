@@ -303,7 +303,96 @@ body[data-theme="blue"] .led[data-theme="blue"] {
   }
 }
 
-/* Poweroff Shutdown */
+/* ---------- boot progress bar ---------- */
+.boot-progress-container {
+  margin-top: 2rem;
+  max-width: 300px;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--crt-color);
+  opacity: 0;
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+#diagnostics-container {
+  animation-delay: 0.8s;
+}
+
+#upload-container {
+  animation-delay: 1.5s;
+}
+
+.boot-label {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.boot-progress-bar {
+  height: 12px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid var(--crt-color);
+  box-shadow: 0 0 4px var(--crt-color);
+  overflow: hidden;
+}
+
+.boot-progress-fill {
+  height: 100%;
+  width: 0;
+  background: var(--crt-color);
+  box-shadow:
+    inset 0 0 12px var(--crt-color),
+    0 0 10px var(--crt-color),
+    0 0 20px var(--crt-color);
+}
+
+/* Animations */
+.diagnostics-fill {
+  animation: bootFill1 0.7s ease-out forwards;
+  animation-delay: 0.8s;
+}
+.upload-fill {
+  animation: bootFill2 0.7s ease-out forwards;
+  animation-delay: 1.5s;
+}
+@keyframes bootFill1 {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes bootFill2 {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* "✓ done" flag */
+.boot-done {
+  display: inline-block;
+  margin-left: 0.8rem;
+  color: #00ff66;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  opacity: 0;
+  animation: doneAppear 0.2s ease-out forwards;
+}
+@keyframes doneAppear {
+  to { opacity: 1; }
+}
+
+/* Final boot flag */
+.boot-complete-flag {
+  margin-top: 1rem;
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out forwards;
+  animation-delay: 2.3s;
+  color: var(--crt-color);
+  /*font-weight: bold;*/
+}
+
+/* Fade-in utility */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ------ Poweroff Shutdown ------ */
 .crt-poweroff-overlay {
   position: fixed;
   top: 0; left: 0;
