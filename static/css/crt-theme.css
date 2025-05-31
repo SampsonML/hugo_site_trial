@@ -516,18 +516,39 @@ body.powered-off .crt-poweroff-overlay {
 
 /* Dot layered above line, flickering */
 .crt-dot {
-  width: 12px;
-  height: 12px;
-  background: radial-gradient(circle, var(--crt-color) 0%, transparent 70%);
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: var(--crt-color); /* solid center */
   border-radius: 50%;
-  box-shadow: 0 0 20px 6px var(--crt-color);
-  animation: dot-flicker 1.2s infinite;
   z-index: 2;
 }
 
-@keyframes dot-flicker {
-  0%, 100% { opacity: 0.8; }
-  50% { opacity: 0.2; }
+/* Glowing halo effect using a separate pulsing ring */
+.crt-dot::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle, var(--crt-color) 20%, transparent 60%);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+  animation: pulse-glow 1.4s ease-in-out infinite;
+  opacity: 0.5;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
 }
 
 /* Centered Reboot Button Styled Like Theme Buttons */
