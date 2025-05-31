@@ -529,6 +529,45 @@ body.powered-off #power-on-btn {
   box-shadow: 0 0 8px var(--crt-color), 0 0 12px var(--crt-color);
 }
 
+/* ------ new shutdown buttons ------ */
+#shutdown-screen {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.glow-dot {
+  width: 12px;
+  height: 12px;
+  background: radial-gradient(circle, orange 0%, transparent 70%);
+  border-radius: 50%;
+  box-shadow: 0 0 20px 6px orange;
+  margin-bottom: 20px;
+}
+
+#shutdown-screen #reboot-btn {
+  background-color: transparent;
+  border: 1px solid orange;
+  color: orange;
+  font-family: monospace;
+  font-size: 1rem;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#shutdown-screen #reboot-btn:hover {
+  background-color: orange;
+  color: black;
+}
+
+
 
 
 
