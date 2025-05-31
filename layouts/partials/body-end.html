@@ -51,28 +51,13 @@
 
   // Theme logic
   function setTheme(theme) {
-    const themeColors = {
-      green: '#66ff99',
-      orange: '#ff9933',
-      blue: '#66ccff'
-    };
-    const crtColor = themeColors[theme];
-
     document.body.setAttribute('data-theme', theme);
     localStorage.setItem('crt-theme', theme);
 
     document.querySelectorAll('.theme-switcher button').forEach(btn => {
-      btn.classList.remove('active');
-      btn.style.removeProperty('box-shadow');
+      btn.classList.remove('active', 'force-glow');
       if (btn.dataset.theme === theme) {
-        btn.classList.add('active');
-        btn.style.boxShadow = `
-          inset 0 0 10px ${crtColor},
-          0 0 8px ${crtColor},
-          0 0 16px ${crtColor},
-          0 0 24px ${crtColor},
-          0 0 32px ${crtColor}
-        `;
+        btn.classList.add('active', 'force-glow');
       }
     });
   }
