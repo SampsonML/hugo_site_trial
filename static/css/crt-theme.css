@@ -109,7 +109,9 @@ a:hover {
   font-family: 'Courier New', Courier, monospace;
 }
 
-/* Boot Screen */
+/* --------------------------------------- */
+/* ------------- boot screen ------------- */
+/* --------------------------------------- */
 #boot-screen {
   position: fixed;
   top: 0;
