@@ -44,9 +44,11 @@
   </button>
 </div>
 
-<!-- Power Off/On Buttons -->
-<button id="power-off-btn" class="power-btn">Power Off</button>
-<button id="power-on-btn" class="power-btn" style="display: none;">Power On</button>
+<!-- Power Buttons (Top Left) -->
+<div class="power-buttons">
+  <button id="power-off-btn" class="power-btn">⭘ Power Off</button>
+  <button id="power-on-btn" class="power-btn" style="display: none;">⭘ Power On</button>
+</div>
 
 <!-- CRT Poweroff Overlay -->
 <div id="crt-overlay" class="crt-poweroff-overlay"></div>
@@ -62,7 +64,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-<!-- power off/on button -->
+<!-- Power Button Logic -->
 <script>
   const powerOffBtn = document.getElementById('power-off-btn');
   const powerOnBtn = document.getElementById('power-on-btn');
@@ -71,15 +73,17 @@ window.addEventListener('DOMContentLoaded', () => {
   powerOffBtn.addEventListener('click', () => {
     overlay.style.opacity = '1';
     overlay.classList.add('crt-collapse');
-
+    document.body.classList.add('powered-off');
+    powerOffBtn.style.display = 'none';
     setTimeout(() => {
-      powerOnBtn.classList.add('show');
       powerOnBtn.style.display = 'inline-block';
-    }, 1100); // show after collapse
+    }, 1100);
   });
 
   powerOnBtn.addEventListener('click', () => {
-    location.reload(); // or custom boot logic
+    overlay.classList.remove('crt-collapse');
+    document.body.classList.remove('powered-off');
+    location.reload(); // Restart page or add boot logic
   });
 </script>
 
