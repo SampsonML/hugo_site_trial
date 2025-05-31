@@ -259,7 +259,7 @@ body::after {
   width: fit-content;
 }
 
-.theme-switcher button[data-theme] {
+.theme-switcher button {
   background: transparent;
   border: 2px solid var(--crt-color);
   color: var(--crt-color);
@@ -277,7 +277,7 @@ body::after {
 body[data-theme="green"] .theme-switcher button[data-theme="green"],
 body[data-theme="orange"] .theme-switcher button[data-theme="orange"],
 body[data-theme="blue"] .theme-switcher button[data-theme="blue"] {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.05); /* subtle glow base */
   box-shadow: 0 0 6px var(--crt-color), 0 0 10px var(--crt-color), 0 0 14px var(--crt-color);
   transform: scale(1.05);
 }
@@ -378,7 +378,9 @@ body[data-theme="blue"] .theme-switcher button[data-theme="blue"] {
   to { opacity: 1; }
 }
 
-/* ------ Poweroff Shutdown ------ */
+/* ------------------------------- */
+/* ------ poweroff shutdown ------ */
+/* ------------------------------- */
 .crt-poweroff-overlay {
   position: fixed;
   top: 0; left: 0;
