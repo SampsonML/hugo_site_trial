@@ -480,7 +480,7 @@ body.powered-off .crt-poweroff-overlay {
   50% { opacity: 0.2; }
 }
 
-body.powered-off *:not(#crt-overlay):not(#power-on-btn):not(.crt-dot) {
+body.powered-off *:not(#crt-overlay):not(#power-on-btn):not(.crt-dot):not(.crt-line) {
   display: none !important;
 }
 
