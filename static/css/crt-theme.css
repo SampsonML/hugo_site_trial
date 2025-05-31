@@ -444,7 +444,7 @@ body.powered-off #power-on-btn:hover {
 }
 
 #power-on-btn {
-  background: transparent;
+  background-color: transparent;
   border: 2px solid var(--crt-color);
   color: var(--crt-color);
   font-family: 'Courier New', Courier, monospace;
