@@ -492,10 +492,6 @@ body.powered-off .crt-poweroff-overlay {
     transparent 100%
   );
   transform: translateY(-50%);
-  box-shadow:
-    0 0 4px var(--crt-color),
-    0 0 12px var(--crt-color),
-    0 0 20px var(--crt-color);
   border-radius: 2px;
   z-index: 1;
 }
