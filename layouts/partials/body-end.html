@@ -41,10 +41,16 @@
 
 <!-- Scripts -->
 <script>
-  function setTheme(theme) {
-    document.body.setAttribute('data-theme', theme);
-    localStorage.setItem('crt-theme', theme);
+  // Boot sequence logic
+  document.body.classList.add("loading");
+  setTimeout(() => {
+    const boot = document.getElementById("boot-screen");
+    if (boot) boot.remove();
+    document.body.classList.remove("loading");
+  }, 2900);
 
+  // Theme logic
+  function setTheme(theme) {
     const themeColors = {
       green: '#66ff99',
       orange: '#ff9933',
@@ -52,10 +58,12 @@
     };
     const crtColor = themeColors[theme];
 
+    document.body.setAttribute('data-theme', theme);
+    localStorage.setItem('crt-theme', theme);
+
     document.querySelectorAll('.theme-switcher button').forEach(btn => {
       btn.classList.remove('active');
       btn.style.removeProperty('box-shadow');
-
       if (btn.dataset.theme === theme) {
         btn.classList.add('active');
         btn.style.boxShadow = `
@@ -70,19 +78,11 @@
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    // Boot sequence
-    document.body.classList.add("loading");
-    setTimeout(() => {
-      const boot = document.getElementById("boot-screen");
-      if (boot) boot.remove();
-      document.body.classList.remove("loading");
-    }, 2900);
-
-    // Theme setup
     const savedTheme = localStorage.getItem('crt-theme') || 'green';
     setTheme(savedTheme);
+  });
 
-    // Shutdown / reboot logic
+  window.addEventListener('DOMContentLoaded', () => {
     const overlay = document.getElementById('crt-overlay');
     const ui = document.getElementById('theme-ui');
     const shutdownBtn = document.getElementById('power-off-btn');
@@ -95,11 +95,14 @@
 
         if (siteWrapper) {
           siteWrapper.classList.add('glitch-flicker');
+
+          // After glitch flicker, start wipe animation
           setTimeout(() => {
             siteWrapper.classList.remove('glitch-flicker');
             siteWrapper.classList.add('crt-wipe');
           }, 400);
 
+          // After full wipe, show dot + reboot
           setTimeout(() => {
             if (overlay) overlay.classList.add('active');
             document.body.classList.add('powered-off');
