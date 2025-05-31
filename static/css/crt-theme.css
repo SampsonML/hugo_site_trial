@@ -239,7 +239,9 @@ body::after {
   100% { transform: translate(0); opacity: 1; }
 }
 
-/* Theme switcher and LEDs */
+/* -------------------------------------- */
+/* ------- theme switcher buttons ------- */
+/* -------------------------------------- */
 .theme-switcher {
   position: absolute;
   top: 1rem;
@@ -253,7 +255,7 @@ body::after {
   width: fit-content;
 }
 
-.theme-switcher button {
+.theme-switcher button[data-theme] {
   background: transparent;
   border: 2px solid var(--crt-color);
   color: var(--crt-color);
@@ -267,43 +269,23 @@ body::after {
   transition: all 0.2s ease;
 }
 
-.theme-switcher button:hover {
-  background-color: var(--crt-hover);
-  box-shadow: 0 0 6px var(--crt-color), 0 0 10px var(--crt-color);
+/* Glow only on active theme button */
+body[data-theme="green"] .theme-switcher button[data-theme="green"],
+body[data-theme="orange"] .theme-switcher button[data-theme="orange"],
+body[data-theme="blue"] .theme-switcher button[data-theme="blue"] {
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 6px var(--crt-color), 0 0 10px var(--crt-color), 0 0 14px var(--crt-color);
   transform: scale(1.05);
 }
 
-.led {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin-right: 0.5rem;
-  border-radius: 50%;
-  background-color: #111;
-  border: 1px solid #111;
-  box-shadow: none;
-  transition: all 0.3s ease;
+.theme-switcher button:hover {
+  background-color: var(--crt-hover);
+  box-shadow: 0 0 4px var(--crt-color), 0 0 8px var(--crt-color);
 }
 
-body[data-theme="green"] .led[data-theme="green"],
-body[data-theme="orange"] .led[data-theme="orange"],
-body[data-theme="blue"] .led[data-theme="blue"] {
-  background-color: rgba(255, 255, 255, 0.4);
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 4px rgba(255, 255, 255, 0.15), 0 0 8px rgba(255, 255, 255, 0.1);
-  animation: whitePulse 1.6s ease-in-out infinite;
-}
-
-@keyframes whitePulse {
-  0%, 100% {
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.15), 0 0 8px rgba(255, 255, 255, 0.1);
-  }
-  50% {
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2), 0 0 12px rgba(255, 255, 255, 0.15);
-  }
-}
-
+/* --------------------------------------- */
 /* ---------- boot progress bar ---------- */
+/* --------------------------------------- */
 .boot-progress-container {
   margin-top: 2rem;
   max-width: 300px;
