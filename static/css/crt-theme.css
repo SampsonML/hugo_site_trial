@@ -491,18 +491,18 @@ body.powered-off #power-on-btn {
   top: 1rem;
   left: 1rem;
   background-color: transparent;
-  border: 1px solid orange;
-  color: orange;
+  border: 1px var(--crt-color);
+  color: var(--crt-color);
   font-family: monospace;
   font-size: 1rem;
   padding: 8px 12px;
   cursor: pointer;
   transition: 0.3s;
-  box-shadow: 0 0 8px orange, 0 0 12px orange;
+  box-shadow: 0 0 8px var(--crt-color), 0 0 12px var(--crt-color);
 }
 
 body.powered-off #power-on-btn:hover {
-  background-color: orange;
+  background-color: var(--crt-color);
   color: black;
 }
 
