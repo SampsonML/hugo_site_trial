@@ -63,12 +63,22 @@
     const ui = document.getElementById('theme-ui');
     const shutdownBtn = document.getElementById('power-off-btn');
     const rebootBtn = document.getElementById('power-on-btn');
+    const siteWrapper = document.getElementById('site-wrapper') || document.getElementById('main-content');
 
     if (shutdownBtn) {
       shutdownBtn.addEventListener('click', () => {
-        overlay.classList.add('active', 'crt-collapse');
-        document.body.classList.add('powered-off');
         if (ui) ui.style.display = 'none';
+
+        // Collapse the page
+        if (siteWrapper) {
+          siteWrapper.classList.add('crt-collapse');
+        }
+
+        // After collapse animation ends (match duration in CSS), show dot + reboot
+        setTimeout(() => {
+          if (overlay) overlay.classList.add('active');
+          document.body.classList.add('powered-off');
+        }, 1100); // match with @keyframes crtCollapse duration
       });
     }
 
