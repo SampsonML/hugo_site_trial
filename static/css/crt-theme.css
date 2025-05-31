@@ -295,7 +295,7 @@ body[data-theme="blue"] .theme-switcher button[data-theme="blue"] {
     0 0 12px var(--crt-color),
     0 0 18px var(--crt-color),
     0 0 24px var(--crt-color);
-  transform: scale(1.06);
+  transform: scale(1.1);
 }
 
 
