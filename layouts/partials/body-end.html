@@ -67,26 +67,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
 <!-- Power Button Logic -->
 <script>
-  const powerOffBtn = document.getElementById('power-off-btn');
-  const powerOnBtn = document.getElementById('power-on-btn');
   const overlay = document.getElementById('crt-overlay');
 
-  powerOffBtn.addEventListener('click', () => {
+  document.getElementById('power-off-btn').addEventListener('click', () => {
     overlay.style.opacity = '1';
     overlay.classList.add('crt-collapse');
-    document.body.classList.add('powered-off');
-    powerOffBtn.style.display = 'none';
-    setTimeout(() => {
-      powerOnBtn.style.display = 'inline-block';
-    }, 1100);
   });
 
-  powerOnBtn.addEventListener('click', () => {
-    overlay.classList.remove('crt-collapse');
-    document.body.classList.remove('powered-off');
-    location.reload(); // Restart page or add boot logic
+  document.getElementById('power-on-btn').addEventListener('click', () => {
+    location.reload();
   });
 </script>
+
 
 
 
