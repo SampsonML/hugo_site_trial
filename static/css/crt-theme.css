@@ -450,27 +450,58 @@ body.powered-off .crt-poweroff-overlay {
   pointer-events: all;
 }
 
-.crt-dot {
+/*
+.crt-poweroff-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: black;
+  z-index: 999999;
+  opacity: 1;
+  pointer-events: all;
+} */
+
+/* Wrapper aligns dot and line together */
+.crt-line-dot-wrapper {
   position: relative;
-  width: 12px;
-  height: 12px;
-  background: radial-gradient(circle, var(--crt-color) 0%, transparent 70%);
-  border-radius: 50%;
-  box-shadow: 0 0 20px 6px var(--crt-color);
+  width: 120px;
+  height: 12px; /* matches dot height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
-  animation: dot-flicker 1.5s infinite;
 }
 
+/* Static line perfectly centered through dot */
 .crt-line {
-  width: 120px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
   height: 2px;
   background: var(--crt-color);
   box-shadow:
     0 0 6px var(--crt-color),
     0 0 12px var(--crt-color),
     0 0 18px var(--crt-color);
+  transform: translateY(-50%);
   border-radius: 2px;
-  margin-bottom: 20px;
+  z-index: 1;
+}
+
+/* Dot layered above line, flickering */
+.crt-dot {
+  width: 12px;
+  height: 12px;
+  background: radial-gradient(circle, var(--crt-color) 0%, transparent 70%);
+  border-radius: 50%;
+  box-shadow: 0 0 20px 6px var(--crt-color);
+  animation: dot-flicker 1.2s infinite;
+  z-index: 2;
 }
 
 
