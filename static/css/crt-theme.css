@@ -458,23 +458,19 @@ body.powered-off .crt-poweroff-overlay {
   border-radius: 50%;
   box-shadow: 0 0 20px 6px var(--crt-color);
   margin-bottom: 20px;
-  animation: dot-flicker 1.2s infinite;
+  animation: dot-flicker 1.5s infinite;
 }
 
-.crt-dot::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 120px; /* length of the glowing line */
+.crt-line {
+  width: 120px;
   height: 2px;
   background: var(--crt-color);
   box-shadow:
     0 0 6px var(--crt-color),
     0 0 12px var(--crt-color),
     0 0 18px var(--crt-color);
-  transform: translate(-50%, -50%);
   border-radius: 2px;
+  margin-bottom: 20px;
 }
 
 
