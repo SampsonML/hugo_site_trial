@@ -454,6 +454,30 @@ body.powered-off #power-on-btn:hover {
   color: black;
 }
 
+#power-on-btn {
+  background: transparent;
+  border: 2px solid var(--crt-color);
+  color: var(--crt-color);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: var(--crt-glow);
+  box-shadow: 0 0 4px var(--crt-color), 0 0 6px var(--crt-color);
+  transition: all 0.2s ease;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 100001;
+}
+
+#power-on-btn:hover {
+  background-color: var(--crt-hover);
+  box-shadow: 0 0 6px var(--crt-color), 0 0 10px var(--crt-color);
+  transform: scale(1.05);
+}
+
 
 
 
