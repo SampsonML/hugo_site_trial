@@ -445,16 +445,6 @@ body[data-theme="blue"] .led[data-theme="blue"] {
   transition: opacity 0.3s ease;
 }
 
-/* Collapse animation */
-.crt-collapse {
-  animation: crtCollapse 1s ease-out forwards;
-}
-
-@keyframes crtCollapse {
-  0%   { opacity: 1; transform: scaleY(1); }
-  70%  { transform: scaleY(0.04); }
-  100% { opacity: 0.8; transform: scaleY(0.01); }
-}
 
 /* Power On Button Fade-in */
 .power-btn.show {
@@ -494,6 +484,46 @@ body[data-theme="blue"] .led[data-theme="blue"] {
   box-shadow: 0 0 6px var(--crt-color), 0 0 10px var(--crt-color);
   transform: scale(1.05);
 }
+
+/* CRT Overlay */
+#crt-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999999;
+  transition: opacity 0.2s ease-out;
+}
+
+/* Power Off Animation */
+.crt-collapse {
+  animation: crtCollapse 1.1s ease-in forwards;
+}
+
+@keyframes crtCollapse {
+  0% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scaleY(0.05);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scaleY(0);
+    opacity: 1;
+  }
+}
+
+/* Optional: Add a fade to black if needed */
+body.powered-off #crt-overlay {
+  pointer-events: all;
+}
+
 
 
 
