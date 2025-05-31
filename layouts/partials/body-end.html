@@ -56,8 +56,21 @@
 
     document.querySelectorAll('.theme-switcher button').forEach(btn => {
       btn.classList.remove('active');
+      btn.style.removeProperty('box-shadow'); // clear previous inline styles
       if (btn.dataset.theme === theme) {
         btn.classList.add('active');
+
+        // Get the resolved color
+        const crtColor = getComputedStyle(document.body).getPropertyValue('--crt-color').trim();
+
+        // Apply directly for reliability
+        btn.style.boxShadow = `
+          inset 0 0 10px ${crtColor},
+          0 0 8px ${crtColor},
+          0 0 16px ${crtColor},
+          0 0 24px ${crtColor},
+          0 0 32px ${crtColor}
+        `;
       }
     });
   }
