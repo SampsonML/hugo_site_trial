@@ -53,7 +53,20 @@
   function setTheme(theme) {
     document.body.setAttribute('data-theme', theme);
     localStorage.setItem('crt-theme', theme);
+
+    // Highlight the active theme button
+    document.querySelectorAll('.theme-switcher button').forEach(btn => {
+      btn.classList.remove('active');
+      if (btn.textContent.toLowerCase().includes(theme)) {
+        btn.classList.add('active');
+      }
+    });
   }
+  
+  //function setTheme(theme) {
+  //  document.body.setAttribute('data-theme', theme);
+  //  localStorage.setItem('crt-theme', theme);
+  //}
 
   window.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('crt-theme') || 'orange';
