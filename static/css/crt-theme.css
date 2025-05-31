@@ -297,24 +297,6 @@ body::after {
     0 0 32px var(--crt-color);
 }
 
-/* glow only on active theme button */
-body[data-theme="green"] .theme-switcher button[data-theme="green"],
-body[data-theme="orange"] .theme-switcher button[data-theme="orange"],
-body[data-theme="blue"] .theme-switcher button[data-theme="blue"] {
-  background-color: rgba(255, 255, 255, 0.08);
-  box-shadow:
-    inset 0 0 10px var(--crt-color),  /* Inner glow */
-    0 0 8px var(--crt-color),
-    0 0 16px var(--crt-color),
-    0 0 24px var(--crt-color),
-    0 0 32px var(--crt-color);
-  transform: scale(1.08);
-  animation: pulseGlow 2.5s ease-in-out infinite;
-  text-shadow: var(--crt-glow);
-  color: var(--crt-color);
-}
-
-
 .theme-switcher button:hover {
   background-color: var(--crt-hover);
   box-shadow: 0 0 10px var(--crt-color), 0 0 20px var(--crt-color), 0 0 30px var(--crt-color);
