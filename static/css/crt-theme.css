@@ -491,7 +491,7 @@ body.powered-off .crt-poweroff-overlay {
     var(--crt-color) 60%,
     transparent 100%
   );
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
   box-shadow:
     0 0 4px var(--crt-color),
     0 0 12px var(--crt-color),
