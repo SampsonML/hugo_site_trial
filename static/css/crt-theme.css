@@ -419,15 +419,26 @@ body.powered-off .crt-poweroff-overlay {
   pointer-events: all;
 }
 
-.crt-collapse {
+#site-wrapper.crt-collapse {
   animation: crtCollapse 1.1s ease-in forwards;
+  transform-origin: center;
 }
 
 @keyframes crtCollapse {
-  0%   { transform: scaleY(1); opacity: 1; }
-  50%  { transform: scaleY(0.05); opacity: 0.9; }
-  100% { transform: scaleY(0); opacity: 1; }
+  0% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scaleY(0.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
 }
+
 
 /* Wrapper aligns dot and line together */
 .crt-line-dot-wrapper {
