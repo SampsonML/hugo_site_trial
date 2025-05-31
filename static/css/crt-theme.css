@@ -456,6 +456,7 @@ body[data-theme="blue"] .crt-poweroff-overlay {
 }
 
 .crt-dot {
+  position: relative;
   width: 12px;
   height: 12px;
   background: radial-gradient(circle, var(--crt-color) 0%, transparent 70%);
@@ -464,6 +465,23 @@ body[data-theme="blue"] .crt-poweroff-overlay {
   margin-bottom: 20px;
   animation: dot-flicker 1.2s infinite;
 }
+
+.crt-dot::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px; /* length of the glowing line */
+  height: 2px;
+  background: var(--crt-color);
+  box-shadow:
+    0 0 6px var(--crt-color),
+    0 0 12px var(--crt-color),
+    0 0 18px var(--crt-color);
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+}
+
 
 
 @keyframes dot-flicker {
