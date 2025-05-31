@@ -271,17 +271,6 @@ body::after {
   width: fit-content;
 }
 
-.led-indicator {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-right: 8px;
-  border-radius: 50%;
-  background-color: transparent;
-  box-shadow: none;
-  transition: all 0.3s ease;
-}
-
 .theme-switcher button {
   background: transparent;
   border: 2px solid var(--crt-color);
@@ -294,15 +283,6 @@ body::after {
   text-shadow: var(--crt-glow);
   box-shadow: 0 0 4px var(--crt-color), 0 0 6px var(--crt-color);
   transition: all 0.2s ease;
-}
-
-.theme-switcher button.active .led-indicator {
-  background-color: var(--crt-color);
-  box-shadow:
-    0 0 4px var(--crt-color),
-    0 0 8px var(--crt-color),
-    0 0 12px var(--crt-color),
-    0 0 16px var(--crt-color);
 }
 
 .theme-switcher button.active {
