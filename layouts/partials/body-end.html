@@ -42,10 +42,14 @@
   <button onclick="setTheme('blue')">
     <span class="led" data-theme="blue"></span> ADM Blue
   </button>
-  <!-- power off/on button -->
-  <button id="power-off-btn" class="power-btn">power off</button>
-  <button id="power-on-btn" class="power-btn" style="display: none;">power on</button>
 </div>
+
+<!-- Power Off/On Buttons -->
+<button id="power-off-btn" class="power-btn">Power Off</button>
+<button id="power-on-btn" class="power-btn" style="display: none;">Power On</button>
+
+<!-- CRT Poweroff Overlay -->
+<div id="crt-overlay" class="crt-poweroff-overlay"></div>
 
 <script>
 function setTheme(theme) {
