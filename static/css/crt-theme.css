@@ -469,11 +469,7 @@ body.powered-off #power-on-btn:hover {
     0 0 18px var(--crt-color),
     0 0 24px var(--crt-color);
   transition: all 0.2s ease;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  z-index: 100001;
-  transform: scale(1.06); /* match theme button */
+  margin-bottom: 20px; /* space above the dot */
 }
 
 #power-on-btn:hover {
@@ -485,6 +481,7 @@ body.powered-off #power-on-btn:hover {
     0 0 28px var(--crt-color);
   transform: scale(1.08);
 }
+
 
 
 
