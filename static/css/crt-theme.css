@@ -481,6 +481,47 @@ body.powered-off #crt-overlay {
   pointer-events: all;
 }
 
+.crt-poweroff-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: black;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s ease;
+}
+
+.crt-poweroff-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.crt-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow:
+    0 0 6px rgba(255, 255, 255, 0.4),
+    0 0 12px rgba(255, 255, 255, 0.2);
+  animation: dot-flicker 1.2s infinite;
+}
+
+@keyframes dot-flicker {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 0.2; }
+}
+
+/* Optional: hide the rest of the content on shutdown */
+body.powered-off *:not(#crt-overlay) {
+  display: none !important;
+}
+
+
 
 
 
