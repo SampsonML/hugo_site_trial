@@ -22,7 +22,7 @@
   <p class="boot-complete-flag">&gt; boot sequence complete</p>
 </div>
 
-<!-- Shutdown Overlay with Flicker Dot and Reboot -->
+<!-- Shutdown Overlay with Dot and Line -->
 <div id="crt-overlay" class="crt-poweroff-overlay">
   <div class="crt-line-dot-wrapper">
     <div class="crt-line"></div>
@@ -36,22 +36,19 @@
   <button onclick="setTheme('green')"> IBM Green </button>
   <button onclick="setTheme('orange')"> VT320 Amber </button>
   <button onclick="setTheme('blue')"> ADM Blue </button>
-  <!-- Power Controls -->
   <button id="power-off-btn" class="power-btn">shutdown</button>
 </div>
 
 <!-- Scripts -->
 <script>
-  // Boot sequence complete
+  // Boot sequence logic
   document.body.classList.add("loading");
   setTimeout(() => {
     const boot = document.getElementById("boot-screen");
     if (boot) boot.remove();
     document.body.classList.remove("loading");
   }, 2900);
-</script>
 
-<script>
   // Theme logic
   function setTheme(theme) {
     document.body.setAttribute('data-theme', theme);
@@ -61,22 +58,25 @@
   window.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('crt-theme') || 'orange';
     setTheme(savedTheme);
-  });
-</script>
 
-<script>
-  // Power buttons
-  const overlay = document.getElementById('crt-overlay');
-  const ui = document.getElementById('theme-ui');
+    const overlay = document.getElementById('crt-overlay');
+    const ui = document.getElementById('theme-ui');
+    const shutdownBtn = document.getElementById('power-off-btn');
+    const rebootBtn = document.getElementById('power-on-btn');
 
-  document.getElementById('power-off-btn').addEventListener('click', () => {
-    overlay.classList.add('active', 'crt-collapse');
-    if (ui) ui.style.display = 'none';
-    document.body.classList.add('powered-off');
-  });
+    if (shutdownBtn) {
+      shutdownBtn.addEventListener('click', () => {
+        overlay.classList.add('active', 'crt-collapse');
+        document.body.classList.add('powered-off');
+        if (ui) ui.style.display = 'none';
+      });
+    }
 
-  document.getElementById('power-on-btn').addEventListener('click', () => {
-    location.reload();
+    if (rebootBtn) {
+      rebootBtn.addEventListener('click', () => {
+        location.reload();
+      });
+    }
   });
 </script>
 
