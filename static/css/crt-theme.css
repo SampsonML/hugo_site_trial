@@ -41,6 +41,9 @@ a:hover {
   background-color: var(--crt-hover) !important;
 }
 
+/* ------------------------ */
+/* --------- links -------- */
+/* ------------------------ */
 /* Download CV button */
 .download-cv {
   border: 2px solid var(--crt-color) !important;
@@ -215,7 +218,9 @@ main, header, footer, .hero, .page-wrapper {
   100% { opacity: 1; visibility: visible; }
 }
 
-/* Scanlines */
+/* ---------------------------- */
+/* --------- scanlines -------- */
+/* ---------------------------- */
 body::after {
   content: "";
   position: fixed;
