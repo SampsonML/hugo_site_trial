@@ -463,19 +463,29 @@ body.powered-off #power-on-btn:hover {
   cursor: pointer;
   text-transform: uppercase;
   text-shadow: var(--crt-glow);
-  box-shadow: 0 0 4px var(--crt-color), 0 0 6px var(--crt-color);
+  box-shadow:
+    0 0 6px var(--crt-color),
+    0 0 12px var(--crt-color),
+    0 0 18px var(--crt-color),
+    0 0 24px var(--crt-color);
   transition: all 0.2s ease;
   position: absolute;
   top: 1rem;
   left: 1rem;
   z-index: 100001;
+  transform: scale(1.06); /* match theme button */
 }
 
 #power-on-btn:hover {
   background-color: var(--crt-hover);
-  box-shadow: 0 0 6px var(--crt-color), 0 0 10px var(--crt-color);
-  transform: scale(1.05);
+  box-shadow:
+    0 0 8px var(--crt-color),
+    0 0 14px var(--crt-color),
+    0 0 20px var(--crt-color),
+    0 0 28px var(--crt-color);
+  transform: scale(1.08);
 }
+
 
 
 
