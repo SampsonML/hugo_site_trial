@@ -33,7 +33,7 @@ highlight_name: true
   <a href="https://scholar.google.com/citations?user=kc8P55cAAAAJ" class="social-icon"><i class="fas fa-graduation-cap"></i></a>
   <a href="https://orcid.org/0000-0001-5748-5393" class="social-icon"><i class="fab fa-orcid"></i></a>
   <a href="https://www.linkedin.com/in/matt-sampson-b56b8113b/" class="social-icon"><i class="fab fa-linkedin"></i></a>
-  <a href="/uploads/sampson2025_cv.pdf" class="social-icon" download>cv</a>
+  <a href="/uploads/sampson2025_cv_academic.pdf" class="social-icon" download>cv</a>
 </div>
 
 
