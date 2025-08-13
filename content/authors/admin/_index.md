@@ -41,7 +41,7 @@ highlight_name: true
 
 <h2 style="margin-top: 2rem;">about me</h2>
 <p>
-I am currently at Princeton University studying ways to advance science and machine learning with a particular focus on modelling dynamical systems, representation learning, and world models. Previously I was at the Australian National University where I performed numerical experiments and helped develop a code to simulate cosmic ray propagation through a dynamically evolving turbulent plasma. I have also worked as a data scientist/computational statistician in fields of information geometry and biology.
+I am currently at Princeton University studying ways to advance science and machine learning with a particular focus on modelling dynamical systems, representation learning, and world models. I am formally trained as a physicist, and applied mathematician and am fascinated by the intersection of physics and machine learning. Previously I was at the Australian National University where I performed numerical experiments and helped develop a code to simulate cosmic ray propagation through a dynamically evolving turbulent plasma. I have also worked as a data scientist/computational statistician in fields of information geometry and biology.
 </p>
 
 
